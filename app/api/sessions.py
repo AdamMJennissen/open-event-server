@@ -23,12 +23,12 @@ from app.api.helpers.utilities import require_relationship
 from app.api.schema.sessions import SessionNotifySchema, SessionSchema
 from app.api.speaker_invites import SpeakerInvite
 from app.models import db
-from app.models.exhibitor import Exhibitor
+from app.models.Event_Context.exhibitor import Exhibitor
 from app.models.Event_Context.microlocation import Microlocation
 from app.models.Event_Context.session import Session
-from app.models.session_speaker_link import SessionsSpeakersLink
+from app.models.Associations_Context.session_speaker_link import SessionsSpeakersLink
 from app.models.Event_Context.session_type import SessionType
-from app.models.speaker import Speaker
+from app.models.Associations_Context.speaker import Speaker
 from app.models.track import Track
 from app.models.user_context.user import User
 

@@ -41,22 +41,22 @@ from app.api.helpers.xcal import XCalExporter
 from app.api.imports import import_event_task_base
 from app.instance import create_app
 from app.models import db
-from app.models.custom_form import ATTENDEE_CUSTOM_FORM, CustomForms
-from app.models.discount_code import DiscountCode
+from app.models.Form_Context.custom_form import ATTENDEE_CUSTOM_FORM, CustomForms
+from app.models.Financial_Context.discount_code import DiscountCode
 from app.models.Event_Context.event import Event
-from app.models.exhibitor import Exhibitor
-from app.models.group import Group
-from app.models.order import Order
+from app.models.Event_Context.exhibitor import Exhibitor
+from app.models.Associations_Context.group import Group
+from app.models.Financial_Context.order import Order
 from app.models.Event_Context.session import Session
-from app.models.speaker import Speaker
+from app.models.Associations_Context.speaker import Speaker
 from app.models.Event_Context.sponsor import Sponsor
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.user_context.user import User
 from app.models.user_context.user_follow_group import UserFollowGroup
 from app.settings import get_settings
 
-from ...models.badge_field_form import BadgeFieldForms
-from ...models.badge_form import BadgeForms
+from ...models.Form_Context.badge_field_form import BadgeFieldForms
+from ...models.Form_Context.badge_form import BadgeForms
 from .badge_forms import (
     create_base64_img_qr,
     get_value_from_field_indentifier,

@@ -9,8 +9,8 @@ from app.api.helpers.export_helpers import (
     create_export_badge_job,
 )
 from app.api.helpers.permission_manager import has_access
-from app.models.badge_form import BadgeForms
-from app.models.ticket_holder import TicketHolder
+from app.models.Form_Context.badge_form import BadgeForms
+from app.models.Financial_Context.ticket_holder import TicketHolder
 
 badge_forms_routes = Blueprint(
     'badge_forms_routes', __name__, url_prefix='/v1/badge-forms'

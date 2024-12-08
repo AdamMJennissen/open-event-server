@@ -1,6 +1,6 @@
 import factory
 
-from app.models.role_invite import RoleInvite
+from app.models.Associations_Context.role_invite import RoleInvite
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

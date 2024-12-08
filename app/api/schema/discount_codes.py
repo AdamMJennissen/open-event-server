@@ -7,8 +7,8 @@ from sqlalchemy.orm.exc import NoResultFound
 from app.api.helpers.errors import UnprocessableEntityError
 from app.api.helpers.utilities import dasherize
 from app.api.schema.base import SoftDeletionSchema
-from app.models.discount_code import DiscountCode
-from app.models.ticket import Ticket
+from app.models.Financial_Context.discount_code import DiscountCode
+from app.models.Financial_Context.ticket import Ticket
 
 
 class DiscountCodeSchemaPublic(SoftDeletionSchema):

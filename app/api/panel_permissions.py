@@ -4,8 +4,8 @@ from app.api.bootstrap import api
 from app.api.helpers.db import safe_query_kwargs
 from app.api.schema.panel_permissions import PanelPermissionSchema
 from app.models import db
-from app.models.custom_system_role import CustomSysRole
-from app.models.panel_permission import PanelPermission
+from app.models.Associations_Context.custom_system_role import CustomSysRole
+from app.models.Associations_Context.panel_permission import PanelPermission
 
 
 class PanelPermissionList(ResourceList):

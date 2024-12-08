@@ -3,7 +3,7 @@ from flask_rest_jsonapi import ResourceDetail
 from app.api.bootstrap import api
 from app.api.schema.image_sizes import EventImageSizeSchema
 from app.models import db
-from app.models.image_size import ImageSizes
+from app.models.Form_Context.image_size import ImageSizes
 
 
 class EventImageSizeDetail(ResourceDetail):

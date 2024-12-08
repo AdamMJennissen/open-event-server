@@ -1,6 +1,6 @@
 import factory
 
-from app.models.exhibitor import Exhibitor
+from app.models.Event_Context.exhibitor import Exhibitor
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

@@ -1,6 +1,6 @@
 import factory
 
-from app.models.speaker import Speaker
+from app.models.Associations_Context.speaker import Speaker
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

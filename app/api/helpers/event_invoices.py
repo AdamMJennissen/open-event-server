@@ -1,6 +1,6 @@
 import datetime
 
-from app.models.event_invoice import EventInvoice
+from app.models.Financial_Context.event_invoice import EventInvoice
 
 
 def fetch_event_invoices(invoice_status):

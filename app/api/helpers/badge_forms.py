@@ -7,9 +7,9 @@ from flask import render_template
 from app.api.helpers.files import create_save_pdf
 from app.api.helpers.storage import UPLOAD_PATHS, generate_hash
 from app.api.helpers.utilities import to_snake_case
-from app.models.badge_field_form import BadgeFieldForms
-from app.models.custom_form import CustomForms
-from app.models.ticket_holder import TicketHolder
+from app.models.Form_Context.badge_field_form import BadgeFieldForms
+from app.models.Form_Context.custom_form import CustomForms
+from app.models.Financial_Context.ticket_holder import TicketHolder
 
 
 def file_pdf_path(self) -> str:

@@ -10,8 +10,8 @@ from app.api.helpers.scheduled_jobs import (
     this_month_date,
 )
 from app.api.helpers.utilities import monthdelta
-from app.models.role import Role
-from app.models.ticket_holder import TicketHolder
+from app.models.Associations_Context.role import Role
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.user_context.users_events_role import UsersEventsRoles
 from app.settings import get_settings
 from tests.factories import common

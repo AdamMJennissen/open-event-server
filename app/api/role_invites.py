@@ -12,8 +12,8 @@ from app.api.helpers.utilities import require_relationship
 from app.api.schema.role_invites import RoleInviteSchema
 from app.models import db
 from app.models.Event_Context.event import Event
-from app.models.role import Role
-from app.models.role_invite import RoleInvite
+from app.models.Associations_Context.role import Role
+from app.models.Associations_Context.role_invite import RoleInvite
 from app.models.user_context.user import User
 from app.models.user_context.users_events_role import UsersEventsRoles
 

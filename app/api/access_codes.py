@@ -11,9 +11,9 @@ from app.api.helpers.query import event_query
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.access_codes import AccessCodeSchema
 from app.models import db
-from app.models.access_code import AccessCode
+from app.models.Financial_Context.access_code import AccessCode
 from app.models.Event_Context.event import Event
-from app.models.ticket import Ticket
+from app.models.Financial_Context.ticket import Ticket
 from app.models.user_context.user import User
 
 

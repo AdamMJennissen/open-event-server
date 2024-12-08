@@ -5,7 +5,7 @@ from app.api.helpers.db import safe_query_kwargs
 from app.api.helpers.permissions import jwt_required
 from app.api.schema.email_notifications import EmailNotificationSchema
 from app.models import db
-from app.models.email_notification import EmailNotification
+from app.models.Communication_Context.email_notification import EmailNotification
 from app.models.user_context.user import User
 
 

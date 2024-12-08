@@ -10,8 +10,8 @@ from app.api.helpers.query import event_query
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.badge_forms import BadgeFormSchema
 from app.models import db
-from app.models.badge_field_form import BadgeFieldForms
-from app.models.badge_form import BadgeForms
+from app.models.Form_Context.badge_field_form import BadgeFieldForms
+from app.models.Form_Context.badge_form import BadgeForms
 from app.models.Event_Context.event import Event
 
 

@@ -8,8 +8,8 @@ from app.api.helpers.db import get_count, safe_query_kwargs
 from app.api.helpers.utilities import dasherize
 from app.models import db
 from app.models.Event_Context.event import Event
-from app.models.order import Order, OrderTicket
-from app.models.ticket import Ticket
+from app.models.Financial_Context.order import Order, OrderTicket
+from app.models.Financial_Context.ticket import Ticket
 
 
 class OrderStatisticsEventSchema(Schema):

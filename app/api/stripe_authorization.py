@@ -14,7 +14,7 @@ from app.api.schema.stripe_authorization import (
 )
 from app.models import db
 from app.models.Event_Context.event import Event
-from app.models.stripe_authorization import StripeAuthorization
+from app.models.Financial_Context.stripe_authorization import StripeAuthorization
 
 
 class StripeAuthorizationListPost(ResourceList):

@@ -5,8 +5,8 @@ from app.api.helpers.db import safe_query_kwargs
 from app.api.helpers.errors import UnprocessableEntityError
 from app.api.schema.roles import RoleSchema
 from app.models import db
-from app.models.role import Role
-from app.models.role_invite import RoleInvite
+from app.models.Associations_Context.role import Role
+from app.models.Associations_Context.role_invite import RoleInvite
 from app.models.user_context.users_events_role import UsersEventsRoles
 from app.models.user_context.users_groups_role import UsersGroupsRoles
 

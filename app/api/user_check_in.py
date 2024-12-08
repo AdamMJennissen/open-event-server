@@ -17,10 +17,10 @@ from app.api.helpers.utilities import require_relationship
 from app.api.schema.station import StationSchema
 from app.api.schema.user_check_in import UserCheckInSchema
 from app.models import db
-from app.models.session import Session
-from app.models.session_type import SessionType
-from app.models.station import Station
-from app.models.ticket_holder import TicketHolder
+from app.models.Event_Context.session import Session
+from app.models.Event_Context.session_type import SessionType
+from app.models.Event_Context.station import Station
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.track import Track
 from app.models.user_context.user_check_in import UserCheckIn
 

@@ -9,9 +9,9 @@ from app.api.helpers.errors import ConflictError, UnprocessableEntityError
 from app.api.helpers.order import delete_related_attendees_for_order, on_order_completed
 from app.api.helpers.payment import PayPalPaymentsManager, StripePaymentsManager
 from app.models import db
-from app.models.ticket import Ticket
-from app.models.ticket_fee import TicketFees
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.ticket import Ticket
+from app.models.Financial_Context.ticket_fee import TicketFees
+from app.models.Financial_Context.ticket_holder import TicketHolder
 
 logger = logging.getLogger(__name__)
 

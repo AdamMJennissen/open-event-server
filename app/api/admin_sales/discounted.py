@@ -6,9 +6,9 @@ from sqlalchemy import func
 from app.api.bootstrap import api
 from app.api.helpers.utilities import dasherize
 from app.models import db
-from app.models.discount_code import DiscountCode
+from app.models.Financial_Context.discount_code import DiscountCode
 from app.models.Event_Context.event import Event
-from app.models.order import Order, OrderTicket
+from app.models.Financial_Context.order import Order, OrderTicket
 from app.models.user_context.user import User
 
 

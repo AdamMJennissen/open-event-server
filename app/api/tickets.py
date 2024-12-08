@@ -13,12 +13,12 @@ from app.api.helpers.query import event_query
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.tickets import TicketSchema, TicketSchemaPublic
 from app.models import db
-from app.models.access_code import AccessCode
-from app.models.discount_code import DiscountCode
+from app.models.Financial_Context.access_code import AccessCode
+from app.models.Financial_Context.discount_code import DiscountCode
 from app.models.Event_Context.event import Event
-from app.models.order import Order
-from app.models.ticket import Ticket, TicketTag, ticket_tags_table
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.order import Order
+from app.models.Financial_Context.ticket import Ticket, TicketTag, ticket_tags_table
+from app.models.Financial_Context.ticket_holder import TicketHolder
 
 tickets_routes = Blueprint('tickets_routes', __name__, url_prefix='/v1/events')
 

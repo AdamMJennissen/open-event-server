@@ -6,9 +6,9 @@ from app.api.helpers.db import get_count
 from app.api.helpers.ticketing import is_discount_available, validate_discount_code
 from app.models import db
 from app.models.base import SoftDeletionModel
-from app.models.order import Order
-from app.models.ticket import Ticket
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.order import Order
+from app.models.Financial_Context.ticket import Ticket
+from app.models.Financial_Context.ticket_holder import TicketHolder
 
 
 class DiscountCode(SoftDeletionModel):

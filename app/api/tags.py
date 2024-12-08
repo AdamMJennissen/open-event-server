@@ -7,7 +7,7 @@ from app.api.schema.tag import TagSchema
 from app.models import db
 from app.models.Event_Context.event import Event
 from app.models.Event_Context.tag import Tag
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.ticket_holder import TicketHolder
 
 
 class TagList(ResourceList):

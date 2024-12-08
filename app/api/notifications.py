@@ -4,7 +4,7 @@ from app.api.bootstrap import api
 from app.api.helpers.db import safe_query_kwargs
 from app.api.schema.notifications import NotificationSchema
 from app.models import db
-from app.models.notification import Notification
+from app.models.Communication_Context.notification import Notification
 from app.models.user_context.user import User
 
 

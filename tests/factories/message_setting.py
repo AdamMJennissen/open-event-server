@@ -1,5 +1,5 @@
 from app.api.helpers.system_mails import MailType
-from app.models.message_setting import MessageSettings
+from app.models.Communication_Context.message_setting import MessageSettings
 from tests.factories.base import BaseFactory
 
 

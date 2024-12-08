@@ -1,6 +1,6 @@
 import factory
 
-from app.models.ticket import Ticket
+from app.models.Financial_Context.ticket import Ticket
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

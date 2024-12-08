@@ -12,8 +12,8 @@ from app.api.helpers.errors import ForbiddenError, NotFoundError
 from app.api.helpers.order import create_pdf_tickets_for_holder
 from app.api.helpers.permission_manager import has_access
 from app.api.helpers.storage import UPLOAD_PATHS, generate_hash
-from app.models.event_invoice import EventInvoice
-from app.models.order import Order
+from app.models.Financial_Context.event_invoice import EventInvoice
+from app.models.Financial_Context.order import Order
 
 event_blueprint = Blueprint('event_blueprint', __name__, url_prefix='/v1/events')
 

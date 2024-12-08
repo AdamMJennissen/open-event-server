@@ -7,8 +7,8 @@ from app.api.data_layers.NoModelLayer import NoModelLayer
 from app.api.helpers.db import get_count
 from app.api.helpers.utilities import dasherize
 from app.models import db
-from app.models.role import Role
-from app.models.ticket_holder import TicketHolder
+from app.models.Associations_Context.role import Role
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.user_context.user import User
 from app.models.user_context.users_events_role import UsersEventsRoles
 

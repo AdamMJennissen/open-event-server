@@ -6,7 +6,7 @@ from sqlalchemy.sql import func
 from app.api.helpers.db import get_new_identifier
 from app.api.helpers.storage import UPLOAD_PATHS, generate_hash
 from app.models import db
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.settings import get_settings
 
 

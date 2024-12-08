@@ -37,33 +37,33 @@ from app.api.schema.events import EventSchema, EventSchemaPublic
 
 # models
 from app.models import db
-from app.models.access_code import AccessCode
-from app.models.custom_form import CustomForms
-from app.models.discount_code import DiscountCode
-from app.models.email_notification import EmailNotification
+from app.models.Financial_Context.access_code import AccessCode
+from app.models.Form_Context.custom_form import CustomForms
+from app.models.Financial_Context.discount_code import DiscountCode
+from app.models.Communication_Context.email_notification import EmailNotification
 from app.models.Event_Context.event import Event
 from app.models.Event_Context.event_copyright import EventCopyright
-from app.models.event_invoice import EventInvoice
-from app.models.exhibitor import Exhibitor
-from app.models.faq import Faq
-from app.models.faq_type import FaqType
+from app.models.Financial_Context.event_invoice import EventInvoice
+from app.models.Event_Context.exhibitor import Exhibitor
+from app.models.Form_Context.faq import Faq
+from app.models.Form_Context.faq_type import FaqType
 from app.models.Event_Context.feedback import Feedback
-from app.models.group import Group
+from app.models.Associations_Context.group import Group
 from app.models.Event_Context.microlocation import Microlocation
-from app.models.order import Order
-from app.models.role import Role
-from app.models.role_invite import RoleInvite
+from app.models.Financial_Context.order import Order
+from app.models.Associations_Context.role import Role
+from app.models.Associations_Context.role_invite import RoleInvite
 from app.models.Event_Context.session import Session
 from app.models.Event_Context.session_type import SessionType
-from app.models.social_link import SocialLink
-from app.models.speaker import Speaker
-from app.models.speaker_invite import SpeakerInvite
+from app.models.Communication_Context.social_link import SocialLink
+from app.models.Associations_Context.speaker import Speaker
+from app.models.Associations_Context.speaker_invite import SpeakerInvite
 from app.models.Event_Context.speakers_call import SpeakersCall
 from app.models.Event_Context.sponsor import Sponsor
-from app.models.stripe_authorization import StripeAuthorization
+from app.models.Financial_Context.stripe_authorization import StripeAuthorization
 from app.models.Event_Context.tax import Tax
-from app.models.ticket import Ticket, TicketTag
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.ticket import Ticket, TicketTag
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.track import Track
 from app.models.user_context.user import (
     MARKETER,
@@ -75,7 +75,7 @@ from app.models.user_context.user import (
 )
 from app.models.user_context.user_favourite_event import UserFavouriteEvent
 from app.models.user_context.users_events_role import UsersEventsRoles
-from app.models.video_stream import VideoStream
+from app.models.Event_Context.video_stream import VideoStream
 
 events_blueprint = Blueprint('events_blueprint', __name__, url_prefix='/v1/events')
 

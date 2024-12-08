@@ -5,9 +5,9 @@ from app.api.helpers.db import get_or_create
 from app.api.helpers.errors import ForbiddenError
 from app.api.helpers.query import event_query
 from app.models.Event_Context.event import Event
-from app.models.order import Order
-from app.models.role import Role
-from app.models.ticket import Ticket
+from app.models.Financial_Context.order import Order
+from app.models.Associations_Context.role import Role
+from app.models.Financial_Context.ticket import Ticket
 from app.models.user_context.users_events_role import UsersEventsRoles
 from tests.factories.event import EventFactoryBasic
 

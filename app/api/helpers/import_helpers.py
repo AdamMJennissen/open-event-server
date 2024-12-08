@@ -16,15 +16,15 @@ from app.api.helpers.errors import NotFoundError, ServerError
 from app.api.helpers.storage import UPLOAD_PATHS, UploadedFile, UploadedMemory, upload
 from app.api.helpers.utilities import is_downloadable, update_state, write_file
 from app.models import db
-from app.models.custom_form import CustomForms
+from app.models.Form_Context.custom_form import CustomForms
 from app.models.Event_Context.event import Event
 from app.models.import_job import ImportJob
 from app.models.Event_Context.microlocation import Microlocation
-from app.models.role import Role
+from app.models.Associations_Context.role import Role
 from app.models.Event_Context.session import Session
 from app.models.Event_Context.session_type import SessionType
-from app.models.social_link import SocialLink
-from app.models.speaker import Speaker
+from app.models.Communication_Context.social_link import SocialLink
+from app.models.Associations_Context.speaker import Speaker
 from app.models.Event_Context.sponsor import Sponsor
 from app.models.track import Track
 from app.models.user_context.user import User

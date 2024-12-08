@@ -1,4 +1,4 @@
-from app.models.panel_permission import PanelPermission
+from app.models.Associations_Context.panel_permission import PanelPermission
 from tests.factories import common
 from tests.factories.base import BaseFactory
 

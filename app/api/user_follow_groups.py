@@ -7,7 +7,7 @@ from app.api.helpers.permission_manager import is_logged_in
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.user_follow_groups import UserFollowGroupSchema
 from app.models import db
-from app.models.group import Group
+from app.models.Associations_Context.group import Group
 from app.models.user_context.user import User
 from app.models.user_context.user_follow_group import UserFollowGroup
 

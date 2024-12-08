@@ -10,39 +10,39 @@ from app.models.custom_placeholder import CustomPlaceholder
 from app.models.custom_system_role import CustomSysRole
 
 # EventLocation
-from app.models.event_location import EventLocation
+from app.models.Event_Context.event_location import EventLocation
 
 # EventSubTopic
-from app.models.event_sub_topic import EventSubTopic
+from app.models.Event_Context.event_sub_topic import EventSubTopic
 
 # EventTopic
-from app.models.event_topic import EventTopic
+from app.models.Event_Context.event_topic import EventTopic
 
 # EventType
-from app.models.event_type import EventType
-from app.models.image_size import ImageSizes
-from app.models.message_setting import MessageSettings
-from app.models.microlocation import Microlocation
-from app.models.notification import NotificationType
-from app.models.notification_setting import NotificationSettings
+from app.models.Event_Context.event_type import EventType
+from app.models.Form_Context.image_size import ImageSizes
+from app.models.Communication_Context.message_setting import MessageSettings
+from app.models.Event_Context.microlocation import Microlocation
+from app.models.Communication_Context.notification import NotificationType
+from app.models.Communication_Context.notification_setting import NotificationSettings
 
 # Admin Panel Permissions
-from app.models.panel_permission import PanelPermission
-from app.models.permission import Permission
+from app.models.Associations_Context.panel_permission import PanelPermission
+from app.models.Associations_Context.permission import Permission
 
 # Event Role-Service Permissions
-from app.models.role import Role
+from app.models.Associations_Context.role import Role
 from app.models.service import Service
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 from app.models.setting import Setting
-from app.models.speaker import Speaker
-from app.models.sponsor import Sponsor
+from app.models.Associations_Context.speaker import Speaker
+from app.models.Event_Context.sponsor import Sponsor
 from app.models.track import Track
 from app.models.user_context.user import MODERATOR, REGISTRAR, TRACK_ORGANIZER
 
 # User Permissions
 from app.models.user_context.user_permission import UserPermission
-from app.models.video_channel import VideoChannel
+from app.models.Event_Context.video_channel import VideoChannel
 
 SALES = 'sales'
 ADMIN = 'admin'

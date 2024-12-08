@@ -1,6 +1,6 @@
 import json
 
-from app.models.station_store_pax import StationStorePax
+from app.models.Event_Context.station_store_pax import StationStorePax
 from tests.factories.event import EventFactoryBasic
 from tests.factories.microlocation import MicrolocationSubFactory
 from tests.factories.session import SessionSubFactory

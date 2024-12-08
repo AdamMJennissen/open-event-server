@@ -11,7 +11,7 @@ sys.path.insert(1, path.abspath(path.join(__file__, "../..")))
 from flask_migrate import Migrate
 from flask import Flask
 from app.models import db
-from app.models.role import Role
+from app.models.Associations_Context.role import Role
 from app.models.user_context.user_token_blacklist import (  # noqa
     UserTokenBlackListTime,
 )  # Workaround for registering unimported model

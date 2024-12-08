@@ -9,10 +9,10 @@ from app.api.helpers.errors import ForbiddenError, NotFoundError
 from app.api.helpers.jwt import get_identity
 from app.api.helpers.permissions import jwt_required
 from app.models.Event_Context.event import Event
-from app.models.event_invoice import EventInvoice
-from app.models.order import Order
+from app.models.Financial_Context.event_invoice import EventInvoice
+from app.models.Financial_Context.order import Order
 from app.models.Event_Context.session import Session
-from app.models.speaker import Speaker
+from app.models.Associations_Context.speaker import Speaker
 from app.models.user_context.user import User
 
 logger = logging.getLogger(__name__)

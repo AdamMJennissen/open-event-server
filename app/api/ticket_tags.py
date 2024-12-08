@@ -8,7 +8,7 @@ from app.api.helpers.query import event_query
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.ticket_tags import TicketTagSchema
 from app.models import db
-from app.models.ticket import Ticket, TicketTag, ticket_tags_table
+from app.models.Financial_Context.ticket import Ticket, TicketTag, ticket_tags_table
 
 
 class TicketTagListPost(ResourceList):

@@ -6,7 +6,7 @@ from marshmallow_jsonapi.flask import Schema as JSONAPISchema
 
 from app.api.helpers.utilities import dasherize
 from app.api.schema.base import TrimmedEmail
-from app.models.exhibitor import Exhibitor
+from app.models.Event_Context.exhibitor import Exhibitor
 
 
 class ExhibitorSocialLinkSchema(Schema):

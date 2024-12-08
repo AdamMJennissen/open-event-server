@@ -1,6 +1,6 @@
 import factory
 
-from app.models.access_code import AccessCode
+from app.models.Financial_Context.access_code import AccessCode
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

@@ -10,7 +10,7 @@ from app.api.helpers.csv_jobs_util import (
     export_speakers_csv,
 )
 from app.models import db
-from app.models.custom_form import ATTENDEE_CUSTOM_FORM
+from app.models.Form_Context.custom_form import ATTENDEE_CUSTOM_FORM
 from tests.all.integration.auth_helper import create_user
 from tests.all.integration.utils import OpenEventTestCase
 from tests.factories import common

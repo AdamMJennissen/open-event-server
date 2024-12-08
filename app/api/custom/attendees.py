@@ -9,8 +9,8 @@ from app.api.helpers.mail import send_email_to_attendees
 from app.api.helpers.permission_manager import has_access
 from app.api.helpers.permissions import jwt_required
 from app.models import db
-from app.models.order import Order
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.order import Order
+from app.models.Financial_Context.ticket_holder import TicketHolder
 
 attendee_blueprint = Blueprint('attendee_blueprint', __name__, url_prefix='/v1')
 

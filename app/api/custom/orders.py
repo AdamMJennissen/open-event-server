@@ -21,11 +21,11 @@ from app.api.orders import validate_attendees
 from app.api.schema.orders import OrderSchema
 from app.extensions.limiter import limiter
 from app.models import db
-from app.models.access_code import AccessCode
-from app.models.discount_code import DiscountCode
-from app.models.order import Order, OrderTicket
-from app.models.ticket import Ticket
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.access_code import AccessCode
+from app.models.Financial_Context.discount_code import DiscountCode
+from app.models.Financial_Context.order import Order, OrderTicket
+from app.models.Financial_Context.ticket import Ticket
+from app.models.Financial_Context.ticket_holder import TicketHolder
 
 order_blueprint = Blueprint('order_blueprint', __name__, url_prefix='/v1/orders')
 ticket_blueprint = Blueprint('ticket_blueprint', __name__, url_prefix='/v1/tickets')

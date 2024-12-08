@@ -1,8 +1,8 @@
 import json
 
 from app.api.helpers.db import get_or_create
-from app.models.role import Role
-from app.models.role_invite import RoleInvite
+from app.models.Associations_Context.role import Role
+from app.models.Associations_Context.role_invite import RoleInvite
 from app.models.user_context.users_events_role import UsersEventsRoles
 from tests.factories.event import EventFactoryBasic
 from tests.factories.role_invite import RoleInviteSubFactory

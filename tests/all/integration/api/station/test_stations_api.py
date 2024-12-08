@@ -1,6 +1,6 @@
 import json
 
-from app.models.station import Station
+from app.models.Event_Context.station import Station
 from tests.factories.event import EventFactoryBasic
 from tests.factories.microlocation import MicrolocationFactory, MicrolocationSubFactory
 from tests.factories.station import StationFactory

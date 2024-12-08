@@ -3,8 +3,8 @@ from sqlalchemy import or_
 from app.api.helpers.errors import ConflictError
 from app.models import db
 from app.models.base import SoftDeletionModel
-from app.models.order import Order, OrderTicket
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.order import Order, OrderTicket
+from app.models.Financial_Context.ticket_holder import TicketHolder
 
 access_codes_tickets = db.Table(
     'access_codes_tickets',

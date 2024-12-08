@@ -8,8 +8,8 @@ from app.api.helpers.query import event_query
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.faqs import FaqSchema
 from app.models import db
-from app.models.faq import Faq
-from app.models.faq_type import FaqType
+from app.models.Form_Context.faq import Faq
+from app.models.Form_Context.faq_type import FaqType
 
 
 class FaqListPost(ResourceList):

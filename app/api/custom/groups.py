@@ -11,8 +11,8 @@ from app.api.helpers.permissions import jwt_required, to_event_id
 from app.api.helpers.system_mails import MAILS, MailType
 from app.api.helpers.utilities import strip_tags
 from app.models.Event_Context.event import Event
-from app.models.group import Group
-from app.models.role import Role
+from app.models.Associations_Context.group import Group
+from app.models.Associations_Context.role import Role
 from app.models.user_context.user_follow_group import UserFollowGroup
 from app.models.user_context.users_groups_role import UsersGroupsRoles
 

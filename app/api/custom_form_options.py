@@ -2,7 +2,7 @@ from flask_rest_jsonapi import ResourceDetail, ResourceList, ResourceRelationshi
 
 from app.api.schema.custom_form_options import CustomFormOptionSchema
 from app.models import db
-from app.models.custom_form_option import CustomFormOptions
+from app.models.Form_Context.custom_form_option import CustomFormOptions
 
 
 class CustomFormOptionList(ResourceList):

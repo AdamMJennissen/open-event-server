@@ -6,7 +6,7 @@ from app.api.helpers.permissions import jwt_required
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.custom_form_translates import CustomFormTranslateSchema
 from app.models import db
-from app.models.custom_form_translate import CustomFormTranslates
+from app.models.Form_Context.custom_form_translate import CustomFormTranslates
 
 
 class CustomFormTranslateList(ResourceList):

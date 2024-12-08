@@ -3,7 +3,7 @@ from flask_rest_jsonapi import ResourceDetail, ResourceList
 from app.api.bootstrap import api
 from app.api.schema.mails import MailSchema
 from app.models import db
-from app.models.mail import Mail
+from app.models.Communication_Context.mail import Mail
 
 
 class MailList(ResourceList):

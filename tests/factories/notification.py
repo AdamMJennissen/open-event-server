@@ -1,6 +1,6 @@
 import factory
 
-from app.models.notification import Notification, NotificationActor, NotificationContent
+from app.models.Communication_Context.notification import Notification, NotificationActor, NotificationContent
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

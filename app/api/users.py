@@ -19,18 +19,18 @@ from app.api.helpers.user import (
 )
 from app.api.schema.users import UserSchema, UserSchemaPublic
 from app.models import db
-from app.models.access_code import AccessCode
-from app.models.discount_code import DiscountCode
-from app.models.email_notification import EmailNotification
+from app.models.Financial_Context.access_code import AccessCode
+from app.models.Financial_Context.discount_code import DiscountCode
+from app.models.Communication_Context.email_notification import EmailNotification
 from app.models.Event_Context.event import Event
-from app.models.event_invoice import EventInvoice
+from app.models.Financial_Context.event_invoice import EventInvoice
 from app.models.Event_Context.feedback import Feedback
-from app.models.group import Group
-from app.models.notification import Notification
-from app.models.order import Order
+from app.models.Associations_Context.group import Group
+from app.models.Communication_Context.notification import Notification
+from app.models.Financial_Context.order import Order
 from app.models.Event_Context.session import Session
-from app.models.speaker import Speaker
-from app.models.ticket_holder import TicketHolder
+from app.models.Associations_Context.speaker import Speaker
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.user_context.user import User
 from app.models.user_context.user_follow_group import UserFollowGroup
 from app.models.user_context.users_events_role import UsersEventsRoles

@@ -1,7 +1,7 @@
 import logging
 
 from app.models import db
-from app.models.role_invite import RoleInvite
+from app.models.Associations_Context.role_invite import RoleInvite
 
 logger = logging.getLogger(__name__)
 
