@@ -36,15 +36,15 @@ from app.api.schema.events import EventSchema, EventSchemaPublic
 # models
 from app.models import db
 from app.models.Financial_Context.access_code import AccessCode
-from app.models.custom_form import CustomForms
+from app.models.Form_Context.custom_form import CustomForms
 from app.models.Financial_Context.discount_code import DiscountCode
 from app.models.email_notification import EmailNotification
 from app.models.Event_Context.event import Event
 from app.models.Event_Context.event_copyright import EventCopyright
 from app.models.Financial_Context.event_invoice import EventInvoice
 from app.models.Event_Context.exhibitor import Exhibitor
-from app.models.faq import Faq
-from app.models.faq_type import FaqType
+from app.models.Form_Context.faq import Faq
+from app.models.Form_Context.faq_type import FaqType
 from app.models.Event_Context.feedback import Feedback
 from app.models.Associations_Context.group import Group
 from app.models.Event_Context.microlocation import Microlocation

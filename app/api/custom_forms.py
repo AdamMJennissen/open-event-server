@@ -10,8 +10,8 @@ from app.api.helpers.query import event_query
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.custom_forms import CustomFormSchema
 from app.models import db
-from app.models.custom_form import CUSTOM_FORM_IDENTIFIER_NAME_MAP, CustomForms
-from app.models.custom_form_translate import CustomFormTranslates
+from app.models.Form_Context.custom_form import CUSTOM_FORM_IDENTIFIER_NAME_MAP, CustomForms
+from app.models.Form_Context.custom_form_translate import CustomFormTranslates
 from app.models.Event_Context.event import Event
 
 

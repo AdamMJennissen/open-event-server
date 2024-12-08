@@ -1,8 +1,8 @@
 from flask_rest_jsonapi.data_layers.base import BaseDataLayer
 
 from app.api.helpers.db import save_to_db
-from app.models.custom_form import CustomForms
-from app.models.custom_form_translate import CustomFormTranslates
+from app.models.Form_Context.custom_form import CustomForms
+from app.models.Form_Context.custom_form_translate import CustomFormTranslates
 
 
 class CustomFormTranslateLayer(BaseDataLayer):

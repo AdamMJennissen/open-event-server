@@ -1,6 +1,6 @@
 import factory
 
-from app.models.badge_form import BadgeForms
+from app.models.Form_Context.badge_form import BadgeForms
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

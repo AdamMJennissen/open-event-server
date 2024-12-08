@@ -6,7 +6,7 @@ from sqlalchemy.orm import make_transient
 from app.api.helpers.db import safe_query, save_to_db
 from app.api.helpers.files import create_save_resized_image
 from app.models import db
-from app.models.custom_form import CustomForms
+from app.models.Form_Context.custom_form import CustomForms
 from app.models.Financial_Context.discount_code import DiscountCode
 from app.models.Event_Context.event import Event, get_new_event_identifier
 from app.models.Event_Context.microlocation import Microlocation

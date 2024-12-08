@@ -6,7 +6,7 @@ from app.api.helpers.permissions import jwt_required
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.badge_field_forms import BadgeFieldFormSchema
 from app.models import db
-from app.models.badge_field_form import BadgeFieldForms
+from app.models.Form_Context.badge_field_form import BadgeFieldForms
 
 
 class BadgeFieldFormList(ResourceList):

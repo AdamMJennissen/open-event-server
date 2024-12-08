@@ -17,7 +17,7 @@ from app.api.helpers.db import get_count
 from app.api.helpers.utilities import get_serializer
 from app.models import db
 from app.models.base import SoftDeletionModel
-from app.models.custom_system_role import UserSystemRole
+from app.models.Associations_Context.custom_system_role import UserSystemRole
 from app.models.Event_Context.event import Event
 from app.models.helpers.versioning import clean_html, clean_up_string
 from app.models.notification import Notification

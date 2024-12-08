@@ -1,6 +1,6 @@
 import factory
 
-from app.models.faq_type import FaqType
+from app.models.Form_Context.faq_type import FaqType
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

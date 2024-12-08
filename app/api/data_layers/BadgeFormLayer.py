@@ -1,8 +1,8 @@
 from flask_rest_jsonapi.data_layers.base import BaseDataLayer
 
 from app.api.helpers.db import save_to_db
-from app.models.badge_field_form import BadgeFieldForms
-from app.models.badge_form import BadgeForms
+from app.models.Form_Context.badge_field_form import BadgeFieldForms
+from app.models.Form_Context.badge_form import BadgeForms
 
 
 class BadgeFormLayer(BaseDataLayer):

@@ -1,6 +1,6 @@
 import json
 
-from app.models.custom_form import CustomForms
+from app.models.Form_Context.custom_form import CustomForms
 from app.models.Event_Context.session import Session
 from tests.factories.session import SessionSubFactory
 from tests.factories.speakers_call import SpeakersCallSubFactory

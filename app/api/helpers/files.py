@@ -15,7 +15,7 @@ from xhtml2pdf import pisa
 
 from app.api.helpers.ICalExporter import ICalExporter
 from app.api.helpers.storage import UPLOAD_PATHS, UploadedFile, generate_hash, upload
-from app.models.image_size import ImageSizes
+from app.models.Form_Context.image_size import ImageSizes
 from app.settings import get_settings
 
 

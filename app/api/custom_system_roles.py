@@ -4,7 +4,7 @@ from app.api.bootstrap import api
 from app.api.helpers.db import safe_query_kwargs
 from app.api.schema.custom_system_roles import CustomSystemRoleSchema
 from app.models import db
-from app.models.custom_system_role import CustomSysRole
+from app.models.Form_Context.custom_system_role import CustomSysRole
 from app.models.Associations_Context.panel_permission import PanelPermission
 
 

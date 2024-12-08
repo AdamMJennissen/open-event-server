@@ -1,5 +1,5 @@
-from app.models.group import Group
-from app.models.role import Role
+from app.models.Associations_Context.group import Group
+from app.models.Associations_Context.role import Role
 from app.models.user_context.users_groups_role import UsersGroupsRoles
 
 
