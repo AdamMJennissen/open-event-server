@@ -8,9 +8,9 @@ from app.api.helpers.errors import UnprocessableEntityError
 from app.api.helpers.files import create_system_image
 from app.api.schema.event_topics import EventTopicSchema
 from app.models import db
-from app.models.event import Event
-from app.models.event_sub_topic import EventSubTopic
-from app.models.event_topic import EventTopic
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.event_sub_topic import EventSubTopic
+from app.models.Event_Context.event_topic import EventTopic
 
 
 class EventTopicList(ResourceList):

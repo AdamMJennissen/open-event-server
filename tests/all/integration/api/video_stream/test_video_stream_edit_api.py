@@ -4,7 +4,7 @@ from app.api.helpers.db import get_or_create
 from app.models import event
 from app.models.role import Role
 from app.models.users_events_role import UsersEventsRoles
-from app.models.video_stream import VideoStream
+from app.models.Event_Context.video_stream import VideoStream
 from tests.factories.attendee import AttendeeOrderSubFactory
 from tests.factories.event import EventFactoryBasic
 from tests.factories.microlocation import MicrolocationSubVideoStreamFactory

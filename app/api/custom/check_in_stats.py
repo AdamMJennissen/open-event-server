@@ -6,10 +6,10 @@ from sqlalchemy import desc
 from app.api.helpers.permissions import jwt_required
 from app.api.helpers.static import STATION_TYPE
 from app.models import db
-from app.models.event import Event
-from app.models.session import Session
-from app.models.session_type import SessionType
-from app.models.station import Station
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.session import Session
+from app.models.Event_Context.session_type import SessionType
+from app.models.Event_Context.station import Station
 from app.models.station_store_pax import StationStorePax
 from app.models.ticket_holder import TicketHolder
 from app.models.track import Track

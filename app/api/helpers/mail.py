@@ -16,7 +16,7 @@ from app.api.helpers.files import generate_ics_file, make_frontend_url
 from app.api.helpers.log import record_activity
 from app.api.helpers.system_mails import MAILS, MailType
 from app.api.helpers.utilities import get_serializer, str_generator, string_empty
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.mail import Mail
 from app.models.message_setting import MessageSettings
 from app.models.order import OrderTicket

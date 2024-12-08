@@ -23,12 +23,12 @@ from app.api.helpers.utilities import require_exclusive_relationship
 from app.api.schema.video_stream import ChatmosphereSchema, VideoStreamSchema
 from app.api.video_channels.bbb import BigBlueButton
 from app.models import db
-from app.models.event import Event
-from app.models.microlocation import Microlocation
-from app.models.video_channel import VideoChannel
-from app.models.video_recording import VideoRecording
-from app.models.video_stream import VideoStream
-from app.models.video_stream_moderator import VideoStreamModerator
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.microlocation import Microlocation
+from app.models.Event_Context.video_channel import VideoChannel
+from app.models.Event_Context.video_recording import VideoRecording
+from app.models.Event_Context.video_stream import VideoStream
+from app.models.Event_Context.video_stream_moderator import VideoStreamModerator
 
 logger = logging.getLogger(__name__)
 

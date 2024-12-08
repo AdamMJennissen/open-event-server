@@ -24,10 +24,10 @@ from app.api.schema.sessions import SessionNotifySchema, SessionSchema
 from app.api.speaker_invites import SpeakerInvite
 from app.models import db
 from app.models.exhibitor import Exhibitor
-from app.models.microlocation import Microlocation
-from app.models.session import Session
+from app.models.Event_Context.microlocation import Microlocation
+from app.models.Event_Context.session import Session
 from app.models.session_speaker_link import SessionsSpeakersLink
-from app.models.session_type import SessionType
+from app.models.Event_Context.session_type import SessionType
 from app.models.speaker import Speaker
 from app.models.track import Track
 from app.models.user import User

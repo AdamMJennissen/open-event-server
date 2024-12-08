@@ -14,8 +14,8 @@ from app.api.helpers.permission_manager import has_access, jwt_required
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.speaker_invites import SpeakerInviteSchema
 from app.models import db
-from app.models.event import Event
-from app.models.session import Session
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
 from app.models.speaker_invite import SpeakerInvite
 from app.models.user import User

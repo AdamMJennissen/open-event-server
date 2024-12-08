@@ -3,7 +3,7 @@ from app.api.helpers.mail import send_email_speaker_invite
 from app.api.helpers.permission_manager import has_access
 from app.models import db
 from app.models.helpers.timestamp import Timestamp
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
 from app.settings import get_settings
 

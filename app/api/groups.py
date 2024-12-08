@@ -11,7 +11,7 @@ from app.api.schema.groups import GroupSchema
 
 # models
 from app.models import db
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.group import Group
 from app.models.role import Role
 from app.models.user import User

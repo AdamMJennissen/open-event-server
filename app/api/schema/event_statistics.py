@@ -4,9 +4,9 @@ from sqlalchemy import distinct, func
 
 from app.api.helpers.cache import cache
 from app.api.helpers.utilities import dasherize
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
-from app.models.sponsor import Sponsor
+from app.models.Event_Context.sponsor import Sponsor
 
 
 class EventStatisticsGeneralSchema(Schema):

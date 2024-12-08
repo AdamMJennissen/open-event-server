@@ -12,7 +12,7 @@ from app.api.schema.badge_forms import BadgeFormSchema
 from app.models import db
 from app.models.badge_field_form import BadgeFieldForms
 from app.models.badge_form import BadgeForms
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 
 
 class BadgeFormList(ResourceList):

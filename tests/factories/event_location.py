@@ -1,4 +1,4 @@
-from app.models.event_location import EventLocation
+from app.models.Event_Context.event_location import EventLocation
 from tests.factories import common
 from tests.factories.base import BaseFactory
 

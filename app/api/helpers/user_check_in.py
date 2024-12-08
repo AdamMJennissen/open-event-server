@@ -8,8 +8,8 @@ from flask import current_app
 from app.api.helpers.errors import BadRequestError, UnprocessableEntityError
 from app.api.helpers.static import STATION_TYPE
 from app.api.helpers.storage import UPLOAD_PATHS, UploadedFile, generate_hash, upload
-from app.models.session import Session
-from app.models.station import Station
+from app.models.Event_Context.session import Session
+from app.models.Event_Context.station import Station
 from app.models.user_check_in import UserCheckIn
 
 

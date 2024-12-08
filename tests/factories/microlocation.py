@@ -1,6 +1,6 @@
 import factory
 
-from app.models.microlocation import Microlocation
+from app.models.Event_Context.microlocation import Microlocation
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

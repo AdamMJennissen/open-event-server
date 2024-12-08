@@ -3,8 +3,8 @@ from xml.etree.ElementTree import Element, SubElement, tostring
 from flask import url_for
 from sqlalchemy import asc
 
-from app.models.event import Event
-from app.models.session import Session
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.session import Session
 
 
 class XCalExporter:

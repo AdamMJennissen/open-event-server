@@ -7,7 +7,7 @@ from app.api.bootstrap import api
 from app.api.helpers.db import save_bulk_to_db
 from app.api.helpers.utilities import dasherize
 from app.models import db
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 
 
 class AdminSalesByEventsSchema(Schema):

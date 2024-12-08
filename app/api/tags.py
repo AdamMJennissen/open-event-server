@@ -5,8 +5,8 @@ from app.api.helpers.errors import ConflictError
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.tag import TagSchema
 from app.models import db
-from app.models.event import Event
-from app.models.tag import Tag
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.tag import Tag
 from app.models.ticket_holder import TicketHolder
 
 

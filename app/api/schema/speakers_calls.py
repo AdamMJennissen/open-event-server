@@ -5,7 +5,7 @@ from marshmallow_jsonapi.flask import Relationship
 from app.api.helpers.errors import UnprocessableEntityError
 from app.api.helpers.utilities import dasherize
 from app.api.schema.base import SoftDeletionSchema
-from app.models.speakers_call import SpeakersCall
+from app.models.Event_Context.speakers_call import SpeakersCall
 
 
 class SpeakersCallSchema(SoftDeletionSchema):

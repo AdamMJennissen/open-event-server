@@ -6,7 +6,7 @@ from marshmallow_jsonapi.flask import Schema
 
 from app.api.helpers.db import get_count
 from app.api.helpers.utilities import dasherize
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 
 
 class AdminStatisticsEventSchema(Schema):

@@ -8,8 +8,8 @@ from app.api.helpers.query import event_query
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.session_types import SessionTypeSchema
 from app.models import db
-from app.models.session import Session
-from app.models.session_type import SessionType
+from app.models.Event_Context.session import Session
+from app.models.Event_Context.session_type import SessionType
 
 
 class SessionTypeListPost(ResourceList):

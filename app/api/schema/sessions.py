@@ -14,7 +14,7 @@ from app.api.helpers.utilities import dasherize
 from app.api.helpers.validations import validate_complex_fields_json
 from app.api.schema.base import SoftDeletionSchema
 from app.models.helpers.versioning import clean_html
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 from utils.common import use_defaults
 
 

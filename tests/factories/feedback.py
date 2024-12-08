@@ -1,6 +1,6 @@
 import factory
 
-from app.models.feedback import Feedback
+from app.models.Event_Context.feedback import Feedback
 from tests.factories.base import BaseFactory
 from tests.factories.session import SessionFactory
 from tests.factories.user import UserFactory

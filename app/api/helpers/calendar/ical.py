@@ -8,7 +8,7 @@ from sqlalchemy import or_
 from sqlalchemy.orm import joinedload
 
 from app.api.helpers.utilities import remove_html_tags
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 
 
 def to_ical(event, include_sessions=False, my_schedule=False, user_id=None):

@@ -8,7 +8,7 @@ from app.api.helpers.query import event_query
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.tracks import TrackSchema
 from app.models import db
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 from app.models.track import Track
 
 

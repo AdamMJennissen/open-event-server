@@ -4,8 +4,8 @@ from app.api.bootstrap import api
 from app.api.helpers.db import safe_query_kwargs
 from app.api.schema.event_types import EventTypeSchema
 from app.models import db
-from app.models.event import Event
-from app.models.event_type import EventType
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.event_type import EventType
 
 
 class EventTypeList(ResourceList):

@@ -15,13 +15,13 @@ from app.api.helpers.db import get_new_identifier
 from app.models import db
 from app.models.base import SoftDeletionModel
 from app.models.email_notification import EmailNotification
-from app.models.event_topic import EventTopic
-from app.models.feedback import Feedback
+from app.models.Event_Context.event_topic import EventTopic
+from app.models.Event_Context.feedback import Feedback
 from app.models.helpers.versioning import clean_html, clean_up_string
 from app.models.order import Order
 from app.models.role import Role
 from app.models.search import sync
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
 from app.models.ticket import Ticket
 from app.models.ticket_fee import get_fee, get_maximum_fee

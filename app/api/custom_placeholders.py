@@ -6,7 +6,7 @@ from app.api.helpers.files import create_save_image_sizes
 from app.api.schema.custom_placeholders import CustomPlaceholderSchema
 from app.models import db
 from app.models.custom_placeholder import CustomPlaceholder
-from app.models.event_sub_topic import EventSubTopic
+from app.models.Event_Context.event_sub_topic import EventSubTopic
 
 
 class CustomPlaceholderList(ResourceList):

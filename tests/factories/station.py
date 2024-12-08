@@ -1,6 +1,6 @@
 import factory
 
-from app.models.station import Station
+from app.models.Event_Context.station import Station
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

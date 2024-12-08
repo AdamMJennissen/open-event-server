@@ -7,8 +7,8 @@ from app.api.helpers.permission_manager import has_access, is_logged_in
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.user_favourite_sessions import UserFavouriteSessionSchema
 from app.models import db
-from app.models.event import Event
-from app.models.session import Session
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.session import Session
 from app.models.user import User
 from app.models.user_favourite_session import UserFavouriteSession
 

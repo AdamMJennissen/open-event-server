@@ -8,10 +8,10 @@ import requests
 
 from app.api.helpers.db import get_new_identifier, get_or_create
 from app.models import db
-from app.models.event import Event
-from app.models.microlocation import Microlocation
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.microlocation import Microlocation
 from app.models.user import User
-from app.models.video_stream import VideoStream
+from app.models.Event_Context.video_stream import VideoStream
 from app.settings import get_settings
 
 logger = logging.getLogger(__name__)

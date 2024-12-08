@@ -8,8 +8,8 @@ from app.api.helpers.query import event_query
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.microlocations import MicrolocationSchema
 from app.models import db
-from app.models.microlocation import Microlocation
-from app.models.session import Session
+from app.models.Event_Context.microlocation import Microlocation
+from app.models.Event_Context.session import Session
 
 
 class MicrolocationListPost(ResourceList):

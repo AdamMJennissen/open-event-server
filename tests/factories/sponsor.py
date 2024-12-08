@@ -1,6 +1,6 @@
 import factory
 
-from app.models.sponsor import Sponsor
+from app.models.Event_Context.sponsor import Sponsor
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

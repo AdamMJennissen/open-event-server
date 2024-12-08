@@ -23,7 +23,7 @@ from app.api.schema.discount_codes import (
 )
 from app.models import db
 from app.models.discount_code import DiscountCode
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.event_invoice import EventInvoice
 from app.models.ticket import Ticket
 from app.models.user import User

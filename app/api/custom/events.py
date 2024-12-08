@@ -13,11 +13,11 @@ from app.api.schema.speakers import SpeakerReorderSchema
 from app.api.schema.virtual_check_in import VirtualCheckInSchema
 from app.models import db
 from app.models.discount_code import DiscountCode
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.exhibitor import Exhibitor
-from app.models.microlocation import Microlocation
+from app.models.Event_Context.microlocation import Microlocation
 from app.models.order import Order
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
 from app.models.ticket_holder import TicketHolder
 

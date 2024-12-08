@@ -7,8 +7,8 @@ from sqlalchemy import desc, func
 from app.api.bootstrap import api
 from app.api.schema.event_locations import EventLocationSchema
 from app.models import db
-from app.models.event import Event
-from app.models.event_location import EventLocation
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.event_location import EventLocation
 
 
 class EventLocationList(ResourceList):

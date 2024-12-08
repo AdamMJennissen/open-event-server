@@ -1,7 +1,7 @@
 from sqlalchemy.orm import backref
 
 from app.models import db
-from app.models.video_channel import VideoChannel
+from app.models.Event_Context.video_channel import VideoChannel
 
 
 class TranslationChannel(db.Model):

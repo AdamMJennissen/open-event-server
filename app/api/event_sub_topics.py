@@ -8,9 +8,9 @@ from app.api.helpers.permission_manager import has_access
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.event_sub_topics import EventSubTopicSchema
 from app.models import db
-from app.models.event import Event
-from app.models.event_sub_topic import EventSubTopic
-from app.models.event_topic import EventTopic
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.event_sub_topic import EventSubTopic
+from app.models.Event_Context.event_topic import EventTopic
 
 
 class EventSubTopicListPost(ResourceList):

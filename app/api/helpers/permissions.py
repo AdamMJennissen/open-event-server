@@ -7,7 +7,7 @@ from flask_jwt_extended import current_user, verify_jwt_in_request
 from app.api.helpers.db import save_to_db
 from app.api.helpers.errors import ForbiddenError
 from app.models import db
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 
 
 def second_order_decorator(inner_dec):

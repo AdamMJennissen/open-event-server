@@ -9,8 +9,8 @@ from app.api.helpers.permission_manager import has_access, is_logged_in
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.tax import TaxSchema, TaxSchemaPublic
 from app.models import db
-from app.models.event import Event
-from app.models.tax import Tax
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.tax import Tax
 
 
 class TaxList(ResourceList):

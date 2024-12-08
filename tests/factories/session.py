@@ -1,6 +1,6 @@
 import factory
 
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

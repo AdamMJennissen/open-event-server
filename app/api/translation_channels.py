@@ -8,8 +8,8 @@ from app.api.helpers.utilities import require_relationship
 from app.api.schema.translation_channels import TranslationChannelSchema
 from app.models import db
 from app.models.translation_channels import TranslationChannel
-from app.models.video_channel import VideoChannel
-from app.models.video_stream import VideoStream
+from app.models.Event_Context.video_channel import VideoChannel
+from app.models.Event_Context.video_stream import VideoStream
 
 
 class TranslationChannelsList(ResourceList):

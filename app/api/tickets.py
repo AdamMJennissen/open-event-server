@@ -15,7 +15,7 @@ from app.api.schema.tickets import TicketSchema, TicketSchemaPublic
 from app.models import db
 from app.models.access_code import AccessCode
 from app.models.discount_code import DiscountCode
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.order import Order
 from app.models.ticket import Ticket, TicketTag, ticket_tags_table
 from app.models.ticket_holder import TicketHolder

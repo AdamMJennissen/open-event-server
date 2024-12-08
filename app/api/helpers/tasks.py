@@ -43,13 +43,13 @@ from app.instance import create_app
 from app.models import db
 from app.models.custom_form import ATTENDEE_CUSTOM_FORM, CustomForms
 from app.models.discount_code import DiscountCode
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.exhibitor import Exhibitor
 from app.models.group import Group
 from app.models.order import Order
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
-from app.models.sponsor import Sponsor
+from app.models.Event_Context.sponsor import Sponsor
 from app.models.ticket_holder import TicketHolder
 from app.models.user import User
 from app.models.user_follow_group import UserFollowGroup

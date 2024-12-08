@@ -7,9 +7,9 @@ from pentabarf.Room import Room
 from sqlalchemy import Date, asc, func
 
 from app.models import db
-from app.models.event import Event as EventModel
-from app.models.microlocation import Microlocation
-from app.models.session import Session
+from app.models.Event_Context.event import Event as EventModel
+from app.models.Event_Context.microlocation import Microlocation
+from app.models.Event_Context.session import Session
 from app.settings import get_settings
 
 

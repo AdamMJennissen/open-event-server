@@ -10,7 +10,7 @@ from app.api.helpers.mail import send_email, send_email_announce_event
 from app.api.helpers.permissions import jwt_required, to_event_id
 from app.api.helpers.system_mails import MAILS, MailType
 from app.api.helpers.utilities import strip_tags
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.group import Group
 from app.models.role import Role
 from app.models.user_follow_group import UserFollowGroup

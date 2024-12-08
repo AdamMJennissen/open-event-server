@@ -10,7 +10,7 @@ from sqlalchemy.orm.exc import NoResultFound
 from app.api.helpers.errors import UnprocessableEntityError
 from app.api.helpers.utilities import dasherize
 from app.api.schema.base import GetterRelationship, SoftDeletionSchema, TrimmedEmail
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 
 
 class DocumentLinkSchema(Schema):

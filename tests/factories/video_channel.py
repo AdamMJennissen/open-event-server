@@ -1,4 +1,4 @@
-from app.models.video_channel import VideoChannel
+from app.models.Event_Context.video_channel import VideoChannel
 from tests.factories import common
 from tests.factories.base import BaseFactory
 

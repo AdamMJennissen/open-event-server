@@ -7,7 +7,7 @@ from app.api.data_layers.NoModelLayer import NoModelLayer
 from app.api.helpers.db import get_count
 from app.api.helpers.utilities import dasherize
 from app.models import db
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 
 
 class AdminStatisticsSessionSchema(Schema):

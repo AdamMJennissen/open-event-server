@@ -4,7 +4,7 @@ from flask_rest_jsonapi.exceptions import ObjectNotFound
 from app.api.helpers.db import get_or_create
 from app.api.helpers.errors import ForbiddenError
 from app.api.helpers.query import event_query
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.order import Order
 from app.models.role import Role
 from app.models.ticket import Ticket

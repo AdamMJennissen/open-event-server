@@ -1,4 +1,4 @@
-from app.models.event_topic import EventTopic
+from app.models.Event_Context.event_topic import EventTopic
 from tests.factories import common
 from tests.factories.base import BaseFactory
 

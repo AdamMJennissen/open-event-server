@@ -8,8 +8,8 @@ from app.api.helpers.permission_manager import has_access
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.speakers_calls import SpeakersCallSchema
 from app.models import db
-from app.models.event import Event
-from app.models.speakers_call import SpeakersCall
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.speakers_call import SpeakersCall
 
 
 class SpeakersCallList(ResourceList):

@@ -1,4 +1,4 @@
-from app.models.video_stream import VideoStream
+from app.models.Event_Context.video_stream import VideoStream
 from tests.factories import common
 from tests.factories.base import BaseFactory
 

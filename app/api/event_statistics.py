@@ -4,7 +4,7 @@ from app.api.bootstrap import api
 from app.api.helpers.db import safe_query_kwargs
 from app.api.schema.event_statistics import EventStatisticsGeneralSchema
 from app.models import db
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 
 
 class EventStatisticsGeneralDetail(ResourceDetail):

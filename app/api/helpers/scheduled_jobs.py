@@ -18,10 +18,10 @@ from app.api.helpers.query import get_user_event_roles_by_role_name
 from app.api.helpers.utilities import monthdelta
 from app.instance import celery
 from app.models import db
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.event_invoice import EventInvoice
 from app.models.order import Order
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
 from app.models.ticket import Ticket
 from app.models.ticket_holder import TicketHolder

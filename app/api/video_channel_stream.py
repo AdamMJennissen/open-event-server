@@ -5,8 +5,8 @@ from app.api.helpers.db import safe_query_kwargs
 from app.api.helpers.permission_manager import has_access, is_logged_in
 from app.api.schema.video_channel import VideoChannelSchema, VideoChannelSchemaPublic
 from app.models import db
-from app.models.video_channel import VideoChannel
-from app.models.video_stream import VideoStream
+from app.models.Event_Context.video_channel import VideoChannel
+from app.models.Event_Context.video_stream import VideoStream
 
 
 class VideoChannelListPost(ResourceList):

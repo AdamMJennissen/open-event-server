@@ -8,8 +8,8 @@ from app.api.helpers.permission_manager import has_access
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.event_copyright import EventCopyrightSchema
 from app.models import db
-from app.models.event import Event
-from app.models.event_copyright import EventCopyright
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.event_copyright import EventCopyright
 
 
 class EventCopyrightListPost(ResourceList):

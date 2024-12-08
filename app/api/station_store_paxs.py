@@ -6,8 +6,8 @@ from app.api.helpers.permissions import jwt_required
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.station_store_pax import StationStorePaxSchema
 from app.models import db
-from app.models.session import Session
-from app.models.station import Station
+from app.models.Event_Context.session import Session
+from app.models.Event_Context.station import Station
 from app.models.station_store_pax import StationStorePax
 
 

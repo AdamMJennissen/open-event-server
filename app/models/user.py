@@ -18,14 +18,14 @@ from app.api.helpers.utilities import get_serializer
 from app.models import db
 from app.models.base import SoftDeletionModel
 from app.models.custom_system_role import UserSystemRole
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.helpers.versioning import clean_html, clean_up_string
 from app.models.notification import Notification
 from app.models.panel_permission import PanelPermission
 from app.models.permission import Permission
 from app.models.role import Role
 from app.models.service import Service
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
 from app.models.user_permission import UserPermission
 from app.models.users_events_role import UsersEventsRoles as UER

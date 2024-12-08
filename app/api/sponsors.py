@@ -9,7 +9,7 @@ from app.api.helpers.query import event_query
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.sponsors import SponsorSchema
 from app.models import db
-from app.models.sponsor import Sponsor
+from app.models.Event_Context.sponsor import Sponsor
 
 
 class SponsorListPost(ResourceList):

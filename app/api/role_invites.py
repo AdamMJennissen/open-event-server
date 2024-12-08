@@ -11,7 +11,7 @@ from app.api.helpers.role_invite import delete_pending_owner, delete_previous_ue
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.role_invites import RoleInviteSchema
 from app.models import db
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.role import Role
 from app.models.role_invite import RoleInvite
 from app.models.user import User

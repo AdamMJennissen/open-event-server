@@ -10,8 +10,8 @@ from app.api.helpers.permissions import jwt_required
 from app.api.schema.video_recordings import VideoRecordingSchema
 from app.api.video_channels.bbb import BigBlueButton
 from app.models import db
-from app.models.video_recording import VideoRecording
-from app.models.video_stream import VideoStream
+from app.models.Event_Context.video_recording import VideoRecording
+from app.models.Event_Context.video_stream import VideoStream
 
 
 class VideoRecordingList(ResourceList):

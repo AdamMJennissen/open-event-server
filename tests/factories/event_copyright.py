@@ -1,6 +1,6 @@
 import factory
 
-from app.models.event_copyright import EventCopyright
+from app.models.Event_Context.event_copyright import EventCopyright
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

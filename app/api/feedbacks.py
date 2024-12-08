@@ -11,9 +11,9 @@ from app.api.helpers.query import event_query
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.feedbacks import FeedbackSchema
 from app.models import db
-from app.models.event import Event
-from app.models.feedback import Feedback
-from app.models.session import Session
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.feedback import Feedback
+from app.models.Event_Context.session import Session
 from app.models.user import User
 
 

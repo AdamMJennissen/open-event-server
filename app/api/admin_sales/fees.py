@@ -5,7 +5,7 @@ from marshmallow_jsonapi.flask import Schema
 from app.api.bootstrap import api
 from app.api.helpers.utilities import dasherize
 from app.models import db
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 
 
 class AdminSalesFeesSchema(Schema):

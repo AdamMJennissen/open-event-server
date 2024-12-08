@@ -7,9 +7,9 @@ from app.api.helpers.permissions import jwt_required
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.station import StationSchema
 from app.models import db
-from app.models.event import Event
-from app.models.microlocation import Microlocation
-from app.models.station import Station
+from app.models.Event_Context.event import Event
+from app.models.Event_Context.microlocation import Microlocation
+from app.models.Event_Context.station import Station
 
 
 class StationList(ResourceList):

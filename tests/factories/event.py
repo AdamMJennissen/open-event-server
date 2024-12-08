@@ -1,4 +1,4 @@
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from tests.factories import common
 from tests.factories.base import BaseFactory
 

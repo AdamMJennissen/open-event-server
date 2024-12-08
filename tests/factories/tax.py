@@ -1,6 +1,6 @@
 import factory
 
-from app.models.tax import Tax
+from app.models.Event_Context.tax import Tax
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

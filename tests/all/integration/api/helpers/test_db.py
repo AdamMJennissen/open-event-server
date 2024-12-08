@@ -10,7 +10,7 @@ from app.api.helpers.db import (
     safe_query_by_id,
     save_to_db,
 )
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.ticket_holder import TicketHolder
 from tests.factories.attendee import AttendeeSubFactory
 from tests.factories.event import EventFactoryBasic

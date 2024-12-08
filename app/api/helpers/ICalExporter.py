@@ -1,5 +1,5 @@
 from app.api.helpers.calendar.ical import to_ical
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 
 
 class ICalExporter:

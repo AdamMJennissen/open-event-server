@@ -1,6 +1,6 @@
 import factory
 
-from app.models.speakers_call import SpeakersCall
+from app.models.Event_Context.speakers_call import SpeakersCall
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

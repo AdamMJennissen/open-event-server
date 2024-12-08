@@ -17,15 +17,15 @@ from app.api.helpers.storage import UPLOAD_PATHS, UploadedFile, UploadedMemory, 
 from app.api.helpers.utilities import is_downloadable, update_state, write_file
 from app.models import db
 from app.models.custom_form import CustomForms
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.import_job import ImportJob
-from app.models.microlocation import Microlocation
+from app.models.Event_Context.microlocation import Microlocation
 from app.models.role import Role
-from app.models.session import Session
-from app.models.session_type import SessionType
+from app.models.Event_Context.session import Session
+from app.models.Event_Context.session_type import SessionType
 from app.models.social_link import SocialLink
 from app.models.speaker import Speaker
-from app.models.sponsor import Sponsor
+from app.models.Event_Context.sponsor import Sponsor
 from app.models.track import Track
 from app.models.user import User
 from app.models.users_events_role import UsersEventsRoles

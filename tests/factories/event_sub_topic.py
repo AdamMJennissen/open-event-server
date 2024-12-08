@@ -1,6 +1,6 @@
 import factory
 
-from app.models.event_sub_topic import EventSubTopic
+from app.models.Event_Context.event_sub_topic import EventSubTopic
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event_topic import EventTopicFactory

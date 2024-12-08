@@ -22,19 +22,19 @@ from app.models import db
 from app.models.access_code import AccessCode
 from app.models.discount_code import DiscountCode
 from app.models.email_notification import EmailNotification
-from app.models.event import Event
+from app.models.Event_Context.event import Event
 from app.models.event_invoice import EventInvoice
-from app.models.feedback import Feedback
+from app.models.Event_Context.feedback import Feedback
 from app.models.group import Group
 from app.models.notification import Notification
 from app.models.order import Order
-from app.models.session import Session
+from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
 from app.models.ticket_holder import TicketHolder
 from app.models.user import User
 from app.models.user_follow_group import UserFollowGroup
 from app.models.users_events_role import UsersEventsRoles
-from app.models.video_stream_moderator import VideoStreamModerator
+from app.models.Event_Context.video_stream_moderator import VideoStreamModerator
 
 logger = logging.getLogger(__name__)
 
