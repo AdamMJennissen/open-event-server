@@ -9,21 +9,14 @@ from app.api.helpers.utilities import dasherize
 from app.models import db
 from app.models.Event_Context.event import Event
 
-
-class AdminSalesByEventsSchema(Schema):
+class EventInfo(Schema):
     """
-    Sales summarized by event
-
-    Provides
-        event(name),
-        date,
-        count of tickets and total sales for orders grouped by status
+    This class holds information about the event.
+    Holds information on the event type, name, date, and owners.
     """
 
     class Meta:
-        type_ = 'admin-sales-by-events'
-        self_view = 'v1.admin_sales_by_events'
-        inflect = dasherize
+        type_ = 'event-info'
 
     id = fields.String()
     identifier = fields.String()
@@ -34,12 +27,6 @@ class AdminSalesByEventsSchema(Schema):
     ends_at = fields.DateTime()
     payment_currency = fields.String()
     payment_country = fields.String()
-    completed_order_sales = fields.Integer(dump_only=True)
-    placed_order_sales = fields.Integer(dump_only=True)
-    pending_order_sales = fields.Integer(dump_only=True)
-    completed_order_tickets = fields.Integer(dump_only=True)
-    placed_order_tickets = fields.Integer(dump_only=True)
-    pending_order_tickets = fields.Integer(dump_only=True)
     type = fields.Method('event_type')
     owner = fields.Method('event_owner')
     owner_id = fields.Method('event_owner_id')
@@ -60,6 +47,35 @@ class AdminSalesByEventsSchema(Schema):
         elif obj.location_name:
             t = 'Venue'
         return str(t)
+        
+        
+class EventSales(Schema):
+    """
+    This class holds sales data for the event.
+    The data is grouped by order status.
+    """
+
+    class Meta:
+        type_ = 'event-sales'
+
+    completed_order_sales = fields.Integer(dump_only=True)
+    placed_order_sales = fields.Integer(dump_only=True)
+    pending_order_sales = fields.Integer(dump_only=True)
+
+
+
+class EventTickets(Schema):
+    """
+    This class holds ticket data for the event.
+    The data is grouped by order status.
+    """
+
+    class Meta:
+        type_ = 'event-tickets'
+
+    completed_order_tickets = fields.Integer(dump_only=True)
+    placed_order_tickets = fields.Integer(dump_only=True)
+    pending_order_tickets = fields.Integer(dump_only=True)
 
 
 class AdminSalesByEventsList(ResourceList):
