@@ -8,7 +8,7 @@ from app.api.helpers.notification import (
     notify_session_state_change,
     notify_ticket_purchase_attendee,
 )
-from app.models.notification import Notification, NotificationType
+from app.models.Communication_Context.notification import Notification, NotificationType
 from app.models.Associations_Context.role import Role
 from app.models.user_context.users_events_role import UsersEventsRoles
 from tests.factories.attendee import AttendeeOrderSubFactory

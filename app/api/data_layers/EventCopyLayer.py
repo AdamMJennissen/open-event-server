@@ -10,7 +10,7 @@ from app.models.Form_Context.custom_form import CustomForms
 from app.models.Financial_Context.discount_code import DiscountCode
 from app.models.Event_Context.event import Event, get_new_event_identifier
 from app.models.Event_Context.microlocation import Microlocation
-from app.models.social_link import SocialLink
+from app.models.Communication_Context.social_link import SocialLink
 from app.models.Event_Context.speakers_call import SpeakersCall
 from app.models.Event_Context.sponsor import Sponsor
 from app.models.Financial_Context.ticket import Ticket

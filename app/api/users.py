@@ -21,12 +21,12 @@ from app.api.schema.users import UserSchema, UserSchemaPublic
 from app.models import db
 from app.models.Financial_Context.access_code import AccessCode
 from app.models.Financial_Context.discount_code import DiscountCode
-from app.models.email_notification import EmailNotification
+from app.models.Communication_Context.email_notification import EmailNotification
 from app.models.Event_Context.event import Event
 from app.models.Financial_Context.event_invoice import EventInvoice
 from app.models.Event_Context.feedback import Feedback
 from app.models.Associations_Context.group import Group
-from app.models.notification import Notification
+from app.models.Communication_Context.notification import Notification
 from app.models.Financial_Context.order import Order
 from app.models.Event_Context.session import Session
 from app.models.Associations_Context.speaker import Speaker

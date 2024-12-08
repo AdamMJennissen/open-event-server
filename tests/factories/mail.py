@@ -1,4 +1,4 @@
-from app.models.mail import Mail
+from app.models.Communication_Context.mail import Mail
 from tests.factories import common
 from tests.factories.base import BaseFactory
 

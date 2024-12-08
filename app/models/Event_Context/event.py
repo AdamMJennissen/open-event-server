@@ -14,7 +14,7 @@ from sqlalchemy.sql.expression import and_, or_
 from app.api.helpers.db import get_new_identifier
 from app.models import db
 from app.models.base import SoftDeletionModel
-from app.models.email_notification import EmailNotification
+from app.models.Communication_Context.email_notification import EmailNotification
 from app.models.Event_Context.event_topic import EventTopic
 from app.models.Event_Context.feedback import Feedback
 from app.models.helpers.versioning import clean_html, clean_up_string

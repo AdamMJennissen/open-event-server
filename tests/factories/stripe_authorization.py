@@ -1,6 +1,6 @@
 import factory
 
-from app.models.stripe_authorization import StripeAuthorization
+from app.models.Financial_Context.stripe_authorization import StripeAuthorization
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic

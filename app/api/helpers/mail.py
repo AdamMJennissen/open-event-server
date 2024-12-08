@@ -17,8 +17,8 @@ from app.api.helpers.log import record_activity
 from app.api.helpers.system_mails import MAILS, MailType
 from app.api.helpers.utilities import get_serializer, str_generator, string_empty
 from app.models.Event_Context.event import Event
-from app.models.mail import Mail
-from app.models.message_setting import MessageSettings
+from app.models.Communication_Context.mail import Mail
+from app.models.Communication_Context.message_setting import MessageSettings
 from app.models.Financial_Context.order import OrderTicket
 from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.user_context.user import User

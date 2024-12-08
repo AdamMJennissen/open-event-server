@@ -3,7 +3,7 @@ from flask_rest_jsonapi import ResourceDetail, ResourceList
 from app.api.bootstrap import api
 from app.api.schema.message_settings import MessageSettingSchema
 from app.models import db
-from app.models.message_setting import MessageSettings
+from app.models.Communication_Context.message_setting import MessageSettings
 
 
 class MessageSettingsList(ResourceList):

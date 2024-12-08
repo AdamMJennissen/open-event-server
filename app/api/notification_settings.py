@@ -3,7 +3,7 @@ from flask_rest_jsonapi import ResourceDetail, ResourceList
 from app.api.bootstrap import api
 from app.api.schema.notification_settings import NotificationSettingSchema
 from app.models import db
-from app.models.notification_setting import NotificationSettings
+from app.models.Communication_Context.notification_setting import NotificationSettings
 
 
 class NotificationSettingsList(ResourceList):

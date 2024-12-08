@@ -9,7 +9,7 @@ from app.api.bootstrap import api
 from app.api.data_layers.NoModelLayer import NoModelLayer
 from app.api.helpers.utilities import dasherize
 from app.models import db
-from app.models.mail import Mail
+from app.models.Communication_Context.mail import Mail
 
 
 class AdminStatisticsMailSchema(Schema):

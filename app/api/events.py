@@ -38,7 +38,7 @@ from app.models import db
 from app.models.Financial_Context.access_code import AccessCode
 from app.models.Form_Context.custom_form import CustomForms
 from app.models.Financial_Context.discount_code import DiscountCode
-from app.models.email_notification import EmailNotification
+from app.models.Communication_Context.email_notification import EmailNotification
 from app.models.Event_Context.event import Event
 from app.models.Event_Context.event_copyright import EventCopyright
 from app.models.Financial_Context.event_invoice import EventInvoice
@@ -53,12 +53,12 @@ from app.models.Associations_Context.role import Role
 from app.models.Associations_Context.role_invite import RoleInvite
 from app.models.Event_Context.session import Session
 from app.models.Event_Context.session_type import SessionType
-from app.models.social_link import SocialLink
+from app.models.Communication_Context.social_link import SocialLink
 from app.models.Associations_Context.speaker import Speaker
 from app.models.Associations_Context.speaker_invite import SpeakerInvite
 from app.models.Event_Context.speakers_call import SpeakersCall
 from app.models.Event_Context.sponsor import Sponsor
-from app.models.stripe_authorization import StripeAuthorization
+from app.models.Financial_Context.stripe_authorization import StripeAuthorization
 from app.models.Event_Context.tax import Tax
 from app.models.Financial_Context.ticket import Ticket, TicketTag
 from app.models.Financial_Context.ticket_holder import TicketHolder
