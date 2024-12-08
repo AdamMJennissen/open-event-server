@@ -126,7 +126,7 @@ class AdminSalesByEventsList(ResourceList):
 
     methods = ['GET']
     decorators = (api.has_permission('is_admin'),)
-    schema = AdminSalesByEventsSchema
+    schema = EventInfo
     data_layer = {
         'model': Event,
         'session': db.session,
