@@ -13,6 +13,10 @@ from app.models.user_context.user import User
 
 
 def sales_per_marketer_and_discount_by_status(status):
+    """
+    Generates a Common Table Expression (CTE) that calculates sales and ticket quantities 
+    per marketer and discount code for a specific order status.
+    """
     return (
         db.session.query(
             Event.id.label('event_id'),
