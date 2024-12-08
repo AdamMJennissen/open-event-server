@@ -8,7 +8,7 @@ from app.api.helpers.query import event_query
 from app.api.helpers.utilities import changed, require_relationship
 from app.api.schema.exhibitors import ExhibitorSchema
 from app.models import db
-from app.models.exhibitor import Exhibitor
+from app.models.Event_Context.exhibitor import Exhibitor
 from app.models.Event_Context.session import Session
 
 

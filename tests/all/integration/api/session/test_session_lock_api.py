@@ -1,7 +1,7 @@
 import json
 
 from app.api.helpers.db import get_or_create
-from app.models.role import Role
+from app.models.Associations_Context.role import Role
 from app.models.user_context.users_events_role import UsersEventsRoles
 from tests.factories.session import SessionSubFactory
 from tests.factories.speakers_call import SpeakersCallSubFactory

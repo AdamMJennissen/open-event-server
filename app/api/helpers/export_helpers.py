@@ -21,7 +21,7 @@ from app.models.export_job import ExportJob
 from app.models.Event_Context.microlocation import Microlocation
 from app.models.Event_Context.session import Session
 from app.models.Event_Context.session_type import SessionType
-from app.models.speaker import Speaker
+from app.models.Associations_Context.speaker import Speaker
 from app.models.Event_Context.sponsor import Sponsor
 from app.models.track import Track
 

@@ -1,6 +1,6 @@
 import factory
 
-from app.models.station_store_pax import StationStorePax
+from app.models.Event_Context.station_store_pax import StationStorePax
 from tests.factories.base import BaseFactory
 from tests.factories.session import SessionFactory
 from tests.factories.station import StationFactory

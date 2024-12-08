@@ -7,8 +7,8 @@ from sqlalchemy.orm.exc import NoResultFound
 from app.api.helpers.errors import UnprocessableEntityError
 from app.api.helpers.utilities import dasherize
 from app.api.schema.base import TrimmedEmail
-from app.models.role import Role
-from app.models.role_invite import RoleInvite
+from app.models.Associations_Context.role import Role
+from app.models.Associations_Context.role_invite import RoleInvite
 from utils.common import use_defaults
 
 

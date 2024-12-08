@@ -22,7 +22,7 @@ from app.models.Event_Context.event import Event
 from app.models.Financial_Context.event_invoice import EventInvoice
 from app.models.Financial_Context.order import Order
 from app.models.Event_Context.session import Session
-from app.models.speaker import Speaker
+from app.models.Associations_Context.speaker import Speaker
 from app.models.Financial_Context.ticket import Ticket
 from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.settings import get_settings

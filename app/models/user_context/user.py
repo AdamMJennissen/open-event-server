@@ -21,12 +21,12 @@ from app.models.custom_system_role import UserSystemRole
 from app.models.Event_Context.event import Event
 from app.models.helpers.versioning import clean_html, clean_up_string
 from app.models.notification import Notification
-from app.models.panel_permission import PanelPermission
-from app.models.permission import Permission
-from app.models.role import Role
+from app.models.Associations_Context.panel_permission import PanelPermission
+from app.models.Associations_Context.permission import Permission
+from app.models.Associations_Context.role import Role
 from app.models.service import Service
 from app.models.Event_Context.session import Session
-from app.models.speaker import Speaker
+from app.models.Associations_Context.speaker import Speaker
 from app.models.user_context.user_permission import UserPermission
 from app.models.user_context.users_events_role import UsersEventsRoles as UER
 

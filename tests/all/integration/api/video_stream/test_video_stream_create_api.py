@@ -2,7 +2,7 @@ import json
 
 from app.api.helpers.db import get_or_create
 from app.models import event
-from app.models.role import Role
+from app.models.Associations_Context.role import Role
 from app.models.user_context.users_events_role import UsersEventsRoles
 from app.models.Event_Context.video_stream import VideoStream
 from tests.factories.event import EventFactoryBasic

@@ -1,6 +1,6 @@
 import factory
 
-from app.models.permission import Permission
+from app.models.Associations_Context.permission import Permission
 from tests.factories.base import BaseFactory
 from tests.factories.role import RoleFactory
 from tests.factories.service import ServiceFactory

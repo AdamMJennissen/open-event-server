@@ -9,7 +9,7 @@ from app.api.helpers.notification import (
     notify_ticket_purchase_attendee,
 )
 from app.models.notification import Notification, NotificationType
-from app.models.role import Role
+from app.models.Associations_Context.role import Role
 from app.models.user_context.users_events_role import UsersEventsRoles
 from tests.factories.attendee import AttendeeOrderSubFactory
 from tests.factories.event_invoice import EventInvoiceSubFactory

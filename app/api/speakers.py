@@ -14,8 +14,8 @@ from app.api.schema.speakers import SpeakerSchema
 from app.models import db
 from app.models.Event_Context.event import Event
 from app.models.Event_Context.session import Session
-from app.models.session_speaker_link import SessionsSpeakersLink
-from app.models.speaker import Speaker
+from app.models.Associations_Context.session_speaker_link import SessionsSpeakersLink
+from app.models.Associations_Context.speaker import Speaker
 from app.models.user_context.user import User
 
 

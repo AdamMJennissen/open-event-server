@@ -8,8 +8,8 @@ from app.api.helpers.errors import ConflictError, ForbiddenError
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.users_groups_roles import UsersGroupsRolesSchema
 from app.models import db
-from app.models.group import Group
-from app.models.role import Role
+from app.models.Associations_Context.group import Group
+from app.models.Associations_Context.role import Role
 from app.models.user_context.user import User
 from app.models.user_context.users_groups_role import UsersGroupsRoles
 

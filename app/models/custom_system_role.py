@@ -1,5 +1,5 @@
 from app.models import db
-from app.models.panel_permission import PanelPermission
+from app.models.Associations_Context.panel_permission import PanelPermission
 
 
 class CustomSysRole(db.Model):

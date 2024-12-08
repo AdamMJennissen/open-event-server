@@ -9,7 +9,7 @@ from app.api.helpers.utilities import dasherize
 from app.models import db
 from app.models.Event_Context.event import Event
 from app.models.Financial_Context.order import Order, OrderTicket
-from app.models.role import Role
+from app.models.Associations_Context.role import Role
 from app.models.user_context.user import User
 from app.models.user_context.users_events_role import UsersEventsRoles
 

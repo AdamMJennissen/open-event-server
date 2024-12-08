@@ -4,7 +4,7 @@ from app.api.helpers.db import safe_query_kwargs
 from app.api.helpers.errors import ForbiddenError
 from app.api.helpers.permission_manager import has_access, is_logged_in
 from app.models.Event_Context.event import Event
-from app.models.role import Role
+from app.models.Associations_Context.role import Role
 from app.models.user_context.users_events_role import UsersEventsRoles
 
 

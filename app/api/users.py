@@ -25,11 +25,11 @@ from app.models.email_notification import EmailNotification
 from app.models.Event_Context.event import Event
 from app.models.Financial_Context.event_invoice import EventInvoice
 from app.models.Event_Context.feedback import Feedback
-from app.models.group import Group
+from app.models.Associations_Context.group import Group
 from app.models.notification import Notification
 from app.models.Financial_Context.order import Order
 from app.models.Event_Context.session import Session
-from app.models.speaker import Speaker
+from app.models.Associations_Context.speaker import Speaker
 from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.user_context.user import User
 from app.models.user_context.user_follow_group import UserFollowGroup

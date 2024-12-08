@@ -1,4 +1,4 @@
-from app.models.role import Role
+from app.models.Associations_Context.role import Role
 from tests.factories import common
 from tests.factories.base import BaseFactory
 

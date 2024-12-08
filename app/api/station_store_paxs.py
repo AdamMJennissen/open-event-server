@@ -8,7 +8,7 @@ from app.api.schema.station_store_pax import StationStorePaxSchema
 from app.models import db
 from app.models.Event_Context.session import Session
 from app.models.Event_Context.station import Station
-from app.models.station_store_pax import StationStorePax
+from app.models.Event_Context.station_store_pax import StationStorePax
 
 
 class StationStorePaxList(ResourceList):

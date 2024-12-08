@@ -1,6 +1,6 @@
 import factory
 
-from app.models.group import Group
+from app.models.Associations_Context.group import Group
 from tests.factories.base import BaseFactory
 from tests.factories.user import UserFactory
 

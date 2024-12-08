@@ -3,7 +3,7 @@ from flask_rest_jsonapi import ResourceDetail, ResourceList, ResourceRelationshi
 from app.api.bootstrap import api
 from app.api.schema.event_role_permissions import EventsRolePermissionSchema
 from app.models import db
-from app.models.permission import Permission
+from app.models.Associations_Context.permission import Permission
 
 
 class EventsRolePermissionList(ResourceList):

@@ -44,11 +44,11 @@ from app.models import db
 from app.models.custom_form import ATTENDEE_CUSTOM_FORM, CustomForms
 from app.models.Financial_Context.discount_code import DiscountCode
 from app.models.Event_Context.event import Event
-from app.models.exhibitor import Exhibitor
-from app.models.group import Group
+from app.models.Event_Context.exhibitor import Exhibitor
+from app.models.Associations_Context.group import Group
 from app.models.Financial_Context.order import Order
 from app.models.Event_Context.session import Session
-from app.models.speaker import Speaker
+from app.models.Associations_Context.speaker import Speaker
 from app.models.Event_Context.sponsor import Sponsor
 from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.user_context.user import User
