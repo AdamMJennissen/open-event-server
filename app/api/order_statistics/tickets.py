@@ -12,7 +12,9 @@ from app.models.Financial_Context.ticket import Ticket
 
 
 def calculated_sale_by_status(ticket_id, status):
-    """calculated_sale_by_status"""
+    """
+    Calculates the total sales amount for a specific ticket and order status.
+    """
     query_ = OrderTicket.query.join(Order).join(Order.discount_code, isouter=True)
     order_ticket_ids: OrderTicket = query_.filter(
         OrderTicket.ticket_id == ticket_id, Order.status == status
