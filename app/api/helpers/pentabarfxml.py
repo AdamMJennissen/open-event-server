@@ -27,12 +27,12 @@ class PentabarfExporter:
     def export(event_id):
         """Takes an event id and returns the event in pentabarf XML format"""
         event = EventModel.query.get(event_id)
-        diff = event.ends_at - event.starts_at
+        diff = event.duration.higher - event.duration.lower
 
         conference = Conference(
             title=event.name,
-            start=event.starts_at,
-            end=event.ends_at,
+            start=event.duration.lower,
+            end=event.duration.higher,
             days=diff.days if diff.days > 0 else 1,
             day_change="00:00",
             timeslot_duration="00:15",

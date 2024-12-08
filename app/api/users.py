@@ -305,7 +305,7 @@ class UserDetail(ResourceDetail):
                         TicketHolder.query.filter_by(user=user)
                         .join(Order)
                         .join(Order.event)
-                        .filter(Event.ends_at > datetime.now())
+                        .filter(Event.duration.higher > datetime.now())
                         .filter(
                             or_(
                                 Order.status == 'completed',

@@ -383,11 +383,11 @@ def send_email_announce_event(event, group, emails):
 
     event_name = event.name
     group_name = group.name
-    event_date = event.starts_at
+    event_date = event.duration.lower
     event_description = event.description
     event_url = event.site_link
     event_location = event.normalized_location
-    event_time = event.starts_at
+    event_time = event.duration.lower
     group_url = group.view_page_link
     app_name = get_settings()['app_name']
 
@@ -557,16 +557,16 @@ def send_email_to_attendees(order):
     buyer_email = order.user.email
     event_date = convert_to_user_locale(
         buyer_email,
-        date=order.event.starts_at,
+        date=order.event.duration.lower,
     )
     event_end_date = convert_to_user_locale(
         buyer_email,
-        date_time=order.event.ends_at,
+        date_time=order.event.duration.higher,
         tz=order.event.timezone,
     )
     event_time = convert_to_user_locale(
         buyer_email,
-        time=order.event.starts_at,
+        time=order.event.duration.lower,
         tz=order.event.timezone,
     )
 
@@ -574,7 +574,7 @@ def send_email_to_attendees(order):
         order=order,
         starts_at=convert_to_user_locale(
             buyer_email,
-            date_time=order.event.starts_at,
+            date_time=order.event.duration.lower,
             tz=order.event.timezone,
         ),
         ends_at=event_end_date,
@@ -640,11 +640,11 @@ def send_order_purchase_organizer_email(order, recipients):
         order_url=order.site_view_link,
         event_date=convert_to_user_locale(
             order.user.email,
-            date=order.event.starts_at,
+            date=order.event.duration.lower,
         ),
         event_time=convert_to_user_locale(
             order.user.email,
-            time=order.event.starts_at,
+            time=order.event.duration.lower,
             tz=order.event.timezone,
         ),
         timezone=order.event.timezone,

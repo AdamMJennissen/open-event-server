@@ -78,10 +78,10 @@ def create_pdf_tickets_for_holder(order):
     :param order: The order for which to create tickets for.
     """
     starts_at = convert_to_user_locale(
-        order.user.email, date_time=order.event.starts_at, tz=order.event.timezone
+        order.user.email, date_time=order.event.duration.lower, tz=order.event.timezone
     )
     ends_at = convert_to_user_locale(
-        order.user.email, date_time=order.event.ends_at, tz=order.event.timezone
+        order.user.email, date_time=order.event.duration.higher, tz=order.event.timezone
     )
     admin_info = Setting.query.first()
     if order.status == 'completed' or order.status == 'placed':
@@ -105,10 +105,10 @@ def create_pdf_tickets_for_holder(order):
 
         for holder in order.ticket_holders:
             starts_at = convert_to_user_locale(
-                holder.email, date_time=order.event.starts_at, tz=order.event.timezone
+                holder.email, date_time=order.event.duration.lower, tz=order.event.timezone
             )
             ends_at = convert_to_user_locale(
-                holder.email, date_time=order.event.ends_at, tz=order.event.timezone
+                holder.email, date_time=order.event.duration.higher, tz=order.event.timezone
             )
 
             # create attendee pdf for every ticket holder

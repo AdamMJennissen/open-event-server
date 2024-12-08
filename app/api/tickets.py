@@ -103,7 +103,7 @@ class TicketListPost(ResourceList):
                         "Event having paid ticket must have a payment method",
                     )
 
-            if data.get('sales_ends_at') > event.ends_at:
+            if data.get('sales_ends_at') > event.duration.higher:
                 raise UnprocessableEntityError(
                     {'sales_ends_at': '/data/attributes/sales-ends-at'},
                     f"End of ticket sales date of '{data.get('name')}' cannot be after end of event date",
@@ -273,7 +273,7 @@ class TicketDetail(ResourceDetail):
                 "Can't delete a ticket that has sales",
             )
 
-        if data.get('sales_ends_at') and data['sales_ends_at'] > ticket.event.ends_at:
+        if data.get('sales_ends_at') and data['sales_ends_at'] > ticket.event.duration.higher:
             raise UnprocessableEntityError(
                 {'sales_ends_at': '/data/attributes/sales-ends-at'},
                 f"End of ticket sales date of '{ticket.name}' cannot be after end of event date",

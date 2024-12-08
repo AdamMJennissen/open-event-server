@@ -11,6 +11,8 @@ from flask_rest_jsonapi.exceptions import ObjectNotFound
 from marshmallow_jsonapi import fields
 from marshmallow_jsonapi.flask import Schema
 from sqlalchemy import and_, or_
+from sqlalchemy.dialects.postgresql import TSTZRANGE
+
 
 from app.api.bootstrap import api
 from app.api.chat.rocket_chat import (
@@ -221,24 +223,16 @@ def validate_event(user, data):
 
 def validate_date(event, data):
     if event:
-        if 'starts_at' not in data:
-            data['starts_at'] = event.starts_at
+        if 'duration' not in data:
+            data['duration'] = event.duration
 
-        if 'ends_at' not in data:
-            data['ends_at'] = event.ends_at
-
-    if not data.get('starts_at') or not data.get('ends_at'):
+    if not data.get('duration'):
         raise UnprocessableEntityError(
             {'pointer': '/data/attributes/date'},
-            "enter required fields starts-at/ends-at",
+            "enter required fields duration",
         )
 
-    if data['starts_at'] >= data['ends_at']:
-        raise UnprocessableEntityError(
-            {'pointer': '/data/attributes/ends-at'}, "ends-at should be after starts-at"
-        )
-
-    if (data['ends_at'] - data['starts_at']).days > 20:
+    if (data['duration'].higher - data['duration']).lower.days > 20:
         raise UnprocessableEntityError(
             {'pointer': '/data/attributes/ends-at'},
             "Event duration can not be more than 20 days",
@@ -612,8 +606,7 @@ class EventDetail(ResourceDetail):
         g.event_name = event.name
 
         is_date_updated = (
-            data.get('starts_at') != event.starts_at
-            or data.get('ends_at') != event.ends_at
+            data.get('duration') != event.duration
         )
         is_draft_published = (
             event.state == Event.State.DRAFT
@@ -799,8 +792,7 @@ class UpcomingEventList(EventList):
         query_ = (
             self.session.query(Event)
             .filter(
-                Event.starts_at > current_time,
-                Event.ends_at > current_time,
+                Event.duration.lower > current_time,
                 Event.state == Event.State.PUBLISHED,
                 Event.privacy == Event.Privacy.PUBLIC,
                 or_(
@@ -838,7 +830,7 @@ class UpcomingEventList(EventList):
                     ),
                 ),
             )
-            .order_by(Event.starts_at)
+            .order_by(Event.duration.lower)
         )
         return query_
 

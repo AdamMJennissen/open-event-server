@@ -44,8 +44,8 @@ class SpeakersCallList(ResourceList):
             )
             event = speakers_call.event
             if (
-                speakers_call.starts_at > event.starts_at
-                or speakers_call.ends_at > event.starts_at
+                speakers_call.starts_at > event.duration.lower
+                or speakers_call.ends_at > event.duration.higher
             ):
                 raise ForbiddenError(
                     {'source': ''},
@@ -90,8 +90,8 @@ class SpeakersCallDetail(ResourceDetail):
                 ).one()
                 event = speakers_call.event
                 if (
-                    speakers_call.starts_at > event.starts_at
-                    or speakers_call.ends_at > event.starts_at
+                    speakers_call.starts_at > event.duration.lower
+                    or speakers_call.ends_at > event.duration.higher
                 ):
                     raise ForbiddenError(
                         {'source': ''},

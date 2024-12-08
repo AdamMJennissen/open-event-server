@@ -697,12 +697,12 @@ def export_admin_sales_csv_task(self, status='all'):
         sales = Event.query.all()
     elif status == 'live':
         sales = Event.query.filter(
-            Event.starts_at <= current_time,
-            Event.ends_at >= current_time,
+            Event.duration.lower <= current_time,
+            Event.duration.higher >= current_time,
         ).all()
     elif status == 'past':
         sales = Event.query.filter(
-            Event.ends_at <= current_time,
+            Event.duration.higher <= current_time,
         ).all()
 
     try:

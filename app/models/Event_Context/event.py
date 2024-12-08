@@ -8,6 +8,8 @@ from flask import current_app
 from flask_babel import _
 from sqlalchemy import event
 from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy.dialects.postgresql import TSTZRANGE
+
 from sqlalchemy.sql import func
 from sqlalchemy.sql.expression import and_, or_
 
@@ -53,8 +55,7 @@ class Event(SoftDeletionModel):
     name = db.Column(db.String, nullable=False)
     external_event_url = db.Column(db.String)
     logo_url = db.Column(db.String)
-    starts_at = db.Column(db.DateTime(timezone=True), nullable=False)
-    ends_at = db.Column(db.DateTime(timezone=True), nullable=False)
+    duration = db.Column(TSTZRANGE, nullable=False)
     timezone = db.Column(db.String, nullable=False, default="UTC")
     online = db.Column(db.Boolean, nullable=False, default=False, server_default='False')
     latitude = db.Column(db.Float)
@@ -456,11 +457,11 @@ class Event(SoftDeletionModel):
 
     @property
     def starts_at_tz(self):
-        return self.starts_at.astimezone(pytz.timezone(self.timezone))
+        return self.duration.lower.astimezone(pytz.timezone(self.timezone))
 
     @property
     def ends_at_tz(self):
-        return self.ends_at.astimezone(pytz.timezone(self.timezone))
+        return self.duration.higher.astimezone(pytz.timezone(self.timezone))
 
     @property
     def normalized_location(self):

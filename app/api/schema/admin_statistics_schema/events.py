@@ -29,12 +29,12 @@ class AdminStatisticsEventSchema(Schema):
     past = fields.Method("events_past_count")
 
     def events_draft_count(self, obj):
-        events = Event.query.filter(Event.ends_at > datetime.now(pytz.utc))
+        events = Event.query.filter(Event.duration.higher > datetime.now(pytz.utc))
         return get_count(events.filter_by(state='draft', deleted_at=None))
 
     def events_published_count(self, obj):
-        events = Event.query.filter(Event.ends_at > datetime.now(pytz.utc))
+        events = Event.query.filter(Event.duration.higher > datetime.now(pytz.utc))
         return get_count(events.filter_by(state='published', deleted_at=None))
 
     def events_past_count(self, obj):
-        return get_count(Event.query.filter(Event.ends_at < datetime.now(pytz.utc)))
+        return get_count(Event.query.filter(Event.duration.higher < datetime.now(pytz.utc)))

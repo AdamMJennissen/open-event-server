@@ -164,12 +164,14 @@
                     </span>
                     <br>
                     <span>
-                        {% if order.event.starts_at %}
-                        <span class="time">{{_('From: %(start_time)s',start_time=starts_at)}}</span>
-                        {% endif %}
+                        {% if order.event.date_range %}
+                        <span class="time">
+                        {{ _('From: %(start_time)s', start_time=order.event.date_range.lower) }}
+                        </span>
                         <br>
-                        {% if order.event.ends_at %}
-                        <span class="time">{{_('To: %(end_time)s',end_time=ends_at)}}</span>
+                        <span class="time">
+                        {{ _('To: %(end_time)s', end_time=order.event.date_range.upper) }}
+                        </span>
                         {% endif %}
                     </span>
                     <span>

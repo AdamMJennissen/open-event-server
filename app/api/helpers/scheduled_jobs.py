@@ -41,7 +41,7 @@ def ticket_sales_end_mail():
     events_with_expired_tickets = (
         Event.query.filter_by(state='published', deleted_at=None)
         .filter(
-            Event.ends_at > current_time,
+            Event.duration.higher > current_time,
             Event.tickets.any(
                 and_(
                     Ticket.deleted_at == None,
@@ -54,7 +54,7 @@ def ticket_sales_end_mail():
     events_whose_ticket_expiring_tomorrow = (
         Event.query.filter_by(state='published', deleted_at=None)
         .filter(
-            Event.ends_at > current_time,
+            Event.duration.higher > current_time,
             Event.tickets.any(
                 and_(
                     Ticket.deleted_at == None,
@@ -67,7 +67,7 @@ def ticket_sales_end_mail():
     events_whose_ticket_expiring_next_week = (
         Event.query.filter_by(state='published', deleted_at=None)
         .filter(
-            Event.ends_at > current_time,
+            Event.duration.higher > current_time,
             Event.tickets.any(
                 and_(
                     Ticket.deleted_at == None,
@@ -110,8 +110,8 @@ def send_after_event_mail():
     events = (
         Event.query.filter_by(state='published', deleted_at=None)
         .filter(
-            Event.ends_at < current_time,
-            current_time - Event.ends_at < datetime.timedelta(days=1),
+            Event.duration.higher < current_time,
+            current_time - Event.duration.higher < datetime.timedelta(days=1),
         )
         .all()
     )
@@ -146,7 +146,7 @@ def change_session_state_on_event_completion():
         sessions_to_be_changed = (
             Session.query.join(Event)
             .filter(Session.state == 'pending')
-            .filter(Event.ends_at < datetime.datetime.now())
+            .filter(Event.duration.higher < datetime.datetime.now())
         )
         for session in sessions_to_be_changed:
             session.state = 'rejected'
@@ -250,8 +250,8 @@ def send_monthly_event_invoice(send_notification: bool = True):
         Event.query.filter(Event.owner != None)
         .filter(
             or_(
-                Event.starts_at.between(last_month, this_month),
-                Event.ends_at.between(last_month, this_month),
+                Event.duration.lower.between(last_month, this_month),
+                Event.duration.higher.between(last_month, this_month),
                 Event.id.in_(last_order_event_ids),
             )
         )

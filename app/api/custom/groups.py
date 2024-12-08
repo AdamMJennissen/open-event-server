@@ -34,7 +34,7 @@ def announce_event(group_id, event_id):
     if event.is_announced:
         raise ForbiddenError({'source': 'event_id'}, "Event has already been announced")
     current_time = datetime.now(pytz.utc)
-    if event.ends_at < current_time or event.state != "published":
+    if event.duration.higher < current_time or event.state != "published":
         raise ForbiddenError(
             {'source': 'event_id'}, "Only upcoming and published events can be announced"
         )

@@ -62,7 +62,7 @@ class DiscountCode(SoftDeletionModel):
 
     @property
     def valid_expire_time(self):
-        return self.valid_till or self.event.ends_at
+        return self.valid_till or self.event.duration.higher
 
     def get_supported_tickets(self, ticket_ids=None):
         query = Ticket.query.with_parent(self).filter_by(deleted_at=None)
