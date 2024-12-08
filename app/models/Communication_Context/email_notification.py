@@ -4,7 +4,10 @@ from app.models.base import SoftDeletionModel
 # Email notifaction preferences for a user assoicated with a specific event. 
 # This model allows users to enable or disable specific types of notifcations.
 class EmailNotification(SoftDeletionModel):
-    """email notifications model class"""
+    """
+        Email notifaction preferences for a user assoicated with a specific event. 
+        This model allows users to enable or disable specific types of notifcations.
+    """
 
     __tablename__ = 'email_notifications'
     id = db.Column(db.Integer, primary_key=True)
