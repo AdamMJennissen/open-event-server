@@ -1,5 +1,5 @@
 from app.api.helpers.db import save_to_db
-from app.models.user import User
+from app.models.user_context.user import User
 
 
 def create_user(email, password, is_verified=True):

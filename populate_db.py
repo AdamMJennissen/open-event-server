@@ -38,10 +38,10 @@ from app.models.setting import Setting
 from app.models.speaker import Speaker
 from app.models.sponsor import Sponsor
 from app.models.track import Track
-from app.models.user import MODERATOR, REGISTRAR, TRACK_ORGANIZER
+from app.models.user_context.user import MODERATOR, REGISTRAR, TRACK_ORGANIZER
 
 # User Permissions
-from app.models.user_permission import UserPermission
+from app.models.user_context.user_permission import UserPermission
 from app.models.video_channel import VideoChannel
 
 SALES = 'sales'

@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify
 
 from app.api.helpers.permissions import jwt_required
-from app.models.users_groups_role import UsersGroupsRoles
+from app.models.user_context.users_groups_role import UsersGroupsRoles
 
 group_role_invites_routes = Blueprint(
     'group_role_invites_routes', __name__, url_prefix='/v1/group-role-invites'

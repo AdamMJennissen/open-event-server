@@ -18,7 +18,7 @@ from app.models.Event_Context.event import Event
 from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
 from app.models.speaker_invite import SpeakerInvite
-from app.models.user import User
+from app.models.user_context.user import User
 
 speaker_invites_misc_routes = Blueprint(
     'speaker_invites_misc', __name__, url_prefix='/v1'

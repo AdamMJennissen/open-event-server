@@ -1,4 +1,4 @@
-from app.models.user import User
+from app.models.user_context.user import User
 from tests.factories import common
 from tests.factories.base import BaseFactory
 

@@ -14,9 +14,9 @@ from app.models import db
 from app.models.Event_Context.event import Event
 from app.models.group import Group
 from app.models.role import Role
-from app.models.user import User
-from app.models.user_follow_group import UserFollowGroup
-from app.models.users_groups_role import UsersGroupsRoles
+from app.models.user_context.user import User
+from app.models.user_context.user_follow_group import UserFollowGroup
+from app.models.user_context.users_groups_role import UsersGroupsRoles
 
 
 def is_owner_or_organizer(group, user):

@@ -27,8 +27,8 @@ from app.models.social_link import SocialLink
 from app.models.speaker import Speaker
 from app.models.Event_Context.sponsor import Sponsor
 from app.models.track import Track
-from app.models.user import User
-from app.models.users_events_role import UsersEventsRoles
+from app.models.user_context.user import User
+from app.models.user_context.users_events_role import UsersEventsRoles
 
 IMPORT_SERIES = [
     ('social_links', SocialLink),

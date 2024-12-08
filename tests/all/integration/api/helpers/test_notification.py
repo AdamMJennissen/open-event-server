@@ -10,7 +10,7 @@ from app.api.helpers.notification import (
 )
 from app.models.notification import Notification, NotificationType
 from app.models.role import Role
-from app.models.users_events_role import UsersEventsRoles
+from app.models.user_context.users_events_role import UsersEventsRoles
 from tests.factories.attendee import AttendeeOrderSubFactory
 from tests.factories.event_invoice import EventInvoiceSubFactory
 from tests.factories.order import OrderSubFactory

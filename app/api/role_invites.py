@@ -14,8 +14,8 @@ from app.models import db
 from app.models.Event_Context.event import Event
 from app.models.role import Role
 from app.models.role_invite import RoleInvite
-from app.models.user import User
-from app.models.users_events_role import UsersEventsRoles
+from app.models.user_context.user import User
+from app.models.user_context.users_events_role import UsersEventsRoles
 
 role_invites_misc_routes = Blueprint('role_invites_misc', __name__, url_prefix='/v1')
 

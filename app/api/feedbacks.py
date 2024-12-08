@@ -14,7 +14,7 @@ from app.models import db
 from app.models.Event_Context.event import Event
 from app.models.Event_Context.feedback import Feedback
 from app.models.Event_Context.session import Session
-from app.models.user import User
+from app.models.user_context.user import User
 
 
 class FeedbackListPost(ResourceList):

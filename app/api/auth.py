@@ -44,7 +44,7 @@ from app.api.helpers.third_party_auth import (
 from app.api.helpers.utilities import get_serializer, str_generator
 from app.extensions.limiter import limiter
 from app.models import db
-from app.models.user import User
+from app.models.user_context.user import User
 
 logger = logging.getLogger(__name__)
 authorised_blueprint = Blueprint('authorised_blueprint', __name__, url_prefix='/')

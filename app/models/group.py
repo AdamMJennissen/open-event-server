@@ -6,7 +6,7 @@ from sqlalchemy_utils import aggregated
 
 from app.models import db
 from app.models.base import SoftDeletionModel
-from app.models.user_follow_group import UserFollowGroup
+from app.models.user_context.user_follow_group import UserFollowGroup
 from app.settings import get_settings
 
 

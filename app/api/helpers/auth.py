@@ -5,8 +5,8 @@ import pytz
 from flask_login import current_user
 
 from app.models import db
-from app.models.user import User
-from app.models.user_token_blacklist import UserTokenBlackListTime
+from app.models.user_context.user import User
+from app.models.user_context.user_token_blacklist import UserTokenBlackListTime
 
 
 class AuthManager:

@@ -14,7 +14,7 @@ from app.models import db
 from app.models.access_code import AccessCode
 from app.models.Event_Context.event import Event
 from app.models.ticket import Ticket
-from app.models.user import User
+from app.models.user_context.user import User
 
 
 class AccessCodeListPost(ResourceList):

@@ -12,7 +12,7 @@ from app.api.helpers.notification import notify_event_role_invitation
 from app.api.helpers.permission_manager import has_access
 from app.models import db
 from app.models.Event_Context.event import Event
-from app.models.user import User
+from app.models.user_context.user import User
 from app.settings import get_settings
 
 

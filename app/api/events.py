@@ -63,7 +63,7 @@ from app.models.Event_Context.tax import Tax
 from app.models.ticket import Ticket, TicketTag
 from app.models.ticket_holder import TicketHolder
 from app.models.track import Track
-from app.models.user import (
+from app.models.user_context.user import (
     MARKETER,
     MODERATOR,
     REGISTRAR,
@@ -71,8 +71,8 @@ from app.models.user import (
     TRACK_ORGANIZER,
     User,
 )
-from app.models.user_favourite_event import UserFavouriteEvent
-from app.models.users_events_role import UsersEventsRoles
+from app.models.user_context.user_favourite_event import UserFavouriteEvent
+from app.models.user_context.users_events_role import UsersEventsRoles
 from app.models.video_stream import VideoStream
 
 events_blueprint = Blueprint('events_blueprint', __name__, url_prefix='/v1/events')

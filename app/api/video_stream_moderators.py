@@ -9,7 +9,7 @@ from app.api.helpers.permissions import jwt_required
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.video_stream_moderators import VideoStreamModeratorSchema
 from app.models import db
-from app.models.user import User
+from app.models.user_context.user import User
 from app.models.Event_Context.video_stream import VideoStream
 from app.models.Event_Context.video_stream_moderator import VideoStreamModerator
 

@@ -3,7 +3,7 @@ import json
 from app.api.helpers.db import get_or_create
 from app.models.custom_form import CustomForms
 from app.models.role import Role
-from app.models.users_events_role import UsersEventsRoles
+from app.models.user_context.users_events_role import UsersEventsRoles
 from tests.factories.event import EventFactoryBasic
 from tests.factories.speaker import SpeakerSubFactory
 from tests.factories.speakers_call import SpeakersCallSubFactory

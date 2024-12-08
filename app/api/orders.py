@@ -44,7 +44,7 @@ from app.api.schema.orders import OrderSchema
 from app.models import db
 from app.models.order import Order, OrderTicket, get_updatable_fields
 from app.models.ticket_holder import TicketHolder
-from app.models.user import User
+from app.models.user_context.user import User
 from app.settings import get_settings
 
 order_misc_routes = Blueprint('order_misc', __name__, url_prefix='/v1')

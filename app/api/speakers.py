@@ -16,7 +16,7 @@ from app.models.Event_Context.event import Event
 from app.models.Event_Context.session import Session
 from app.models.session_speaker_link import SessionsSpeakersLink
 from app.models.speaker import Speaker
-from app.models.user import User
+from app.models.user_context.user import User
 
 
 def check_email_override(data, event_id, speaker=None):

@@ -13,7 +13,7 @@ from app.models.Event_Context.station import Station
 from app.models.station_store_pax import StationStorePax
 from app.models.ticket_holder import TicketHolder
 from app.models.track import Track
-from app.models.user_check_in import UserCheckIn
+from app.models.user_context.user_check_in import UserCheckIn
 
 check_in_stats_routes = Blueprint(
     'check_in_stats_routes', __name__, url_prefix='/v1/user-check-in/stats'

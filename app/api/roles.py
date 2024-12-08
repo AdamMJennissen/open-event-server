@@ -7,8 +7,8 @@ from app.api.schema.roles import RoleSchema
 from app.models import db
 from app.models.role import Role
 from app.models.role_invite import RoleInvite
-from app.models.users_events_role import UsersEventsRoles
-from app.models.users_groups_role import UsersGroupsRoles
+from app.models.user_context.users_events_role import UsersEventsRoles
+from app.models.user_context.users_groups_role import UsersGroupsRoles
 
 
 class RoleList(ResourceList):

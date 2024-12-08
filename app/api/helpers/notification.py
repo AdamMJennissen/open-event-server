@@ -9,7 +9,7 @@ from app.models.notification import (
 )
 from app.models.notification_setting import NotificationSettings
 from app.models.speaker import Speaker
-from app.models.user import User
+from app.models.user_context.user import User
 
 logger = logging.getLogger(__name__)
 

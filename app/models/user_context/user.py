@@ -27,8 +27,8 @@ from app.models.role import Role
 from app.models.service import Service
 from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
-from app.models.user_permission import UserPermission
-from app.models.users_events_role import UsersEventsRoles as UER
+from app.models.user_context.user_permission import UserPermission
+from app.models.user_context.users_events_role import UsersEventsRoles as UER
 
 # System-wide
 ADMIN = 'admin'
@@ -198,7 +198,7 @@ class User(SoftDeletionModel):
         """
         Checks if a user has a particular Role at an Event.
         """
-        from app.models.users_groups_role import UsersGroupsRoles
+        from app.models.user_context.users_groups_role import UsersGroupsRoles
 
         role = Role.query.filter_by(name=role_name).first()
         uer = UER.query.filter_by(user=self, role=role)

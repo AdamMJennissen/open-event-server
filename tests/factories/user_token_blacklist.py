@@ -1,4 +1,4 @@
-from app.models.user_token_blacklist import UserTokenBlackListTime
+from app.models.user_context.user_token_blacklist import UserTokenBlackListTime
 from tests.factories.base import BaseFactory
 
 

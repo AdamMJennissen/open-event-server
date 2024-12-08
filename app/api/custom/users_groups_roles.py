@@ -6,8 +6,8 @@ from flask_jwt_extended import current_user
 from app.api.helpers.db import save_to_db
 from app.api.helpers.errors import ConflictError, ForbiddenError, NotFoundError
 from app.api.helpers.permissions import jwt_required
-from app.models.user import User
-from app.models.users_groups_role import UsersGroupsRoles
+from app.models.user_context.user import User
+from app.models.user_context.users_groups_role import UsersGroupsRoles
 
 logger = logging.getLogger(__name__)
 

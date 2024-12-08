@@ -1,6 +1,6 @@
 from app.models.group import Group
 from app.models.role import Role
-from app.models.users_groups_role import UsersGroupsRoles
+from app.models.user_context.users_groups_role import UsersGroupsRoles
 
 
 def get_user_group_role(user_id, group_id):

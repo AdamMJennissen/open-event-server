@@ -6,7 +6,7 @@ from app.api.helpers.query import event_query
 from app.api.schema.users_events_roles import UsersEventsRolesSchema
 from app.models import db
 from app.models.role_invite import RoleInvite
-from app.models.users_events_role import UsersEventsRoles
+from app.models.user_context.users_events_role import UsersEventsRoles
 
 
 class UsersEventsRolesList(ResourceList):

@@ -1,6 +1,6 @@
 import unittest
 
-from app.models.user import User
+from app.models.user_context.user import User
 from tests.all.integration.auth_helper import create_super_admin
 from tests.all.integration.setup_database import Setup, db
 

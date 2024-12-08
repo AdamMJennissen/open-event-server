@@ -30,7 +30,7 @@ from app.models.session_speaker_link import SessionsSpeakersLink
 from app.models.Event_Context.session_type import SessionType
 from app.models.speaker import Speaker
 from app.models.track import Track
-from app.models.user import User
+from app.models.user_context.user import User
 
 sessions_blueprint = Blueprint('sessions_blueprint', __name__, url_prefix='/v1/sessions')
 

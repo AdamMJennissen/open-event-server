@@ -14,7 +14,7 @@ from app.models.Event_Context.sponsor import Sponsor
 from app.models.Event_Context.tax import Tax
 from app.models.ticket import Ticket
 from app.models.track import Track
-from app.models.users_events_role import UsersEventsRoles
+from app.models.user_context.users_events_role import UsersEventsRoles
 
 event_copy = Blueprint('event_copy', __name__, url_prefix='/v1/events')
 

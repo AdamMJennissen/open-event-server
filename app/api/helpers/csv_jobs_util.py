@@ -7,7 +7,7 @@ from app.models.access_code import AccessCode
 from app.models.helpers.versioning import strip_tags
 from app.models.order import OrderTicket
 from app.models.ticket import access_codes_tickets
-from app.models.user_check_in import VirtualCheckIn
+from app.models.user_context.user_check_in import VirtualCheckIn
 
 
 def export_orders_csv(orders):

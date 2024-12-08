@@ -1,6 +1,6 @@
 import factory
 
-from app.models.users_events_role import UsersEventsRoles
+from app.models.user_context.users_events_role import UsersEventsRoles
 from tests.factories.base import BaseFactory
 from tests.factories.event import EventFactoryBasic
 from tests.factories.role import RoleFactory

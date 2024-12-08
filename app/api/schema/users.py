@@ -6,7 +6,7 @@ from marshmallow_jsonapi.flask import Relationship
 from app.api.helpers.permission_manager import require_current_user
 from app.api.helpers.utilities import dasherize
 from app.api.schema.base import SoftDeletionSchema, TrimmedEmail
-from app.models.user import User
+from app.models.user_context.user import User
 from utils.common import use_defaults
 
 

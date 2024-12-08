@@ -10,8 +10,8 @@ from app.api.schema.users_groups_roles import UsersGroupsRolesSchema
 from app.models import db
 from app.models.group import Group
 from app.models.role import Role
-from app.models.user import User
-from app.models.users_groups_role import UsersGroupsRoles
+from app.models.user_context.user import User
+from app.models.user_context.users_groups_role import UsersGroupsRoles
 
 
 class UsersGroupsRolesList(ResourceList):

@@ -26,7 +26,7 @@ from app.models.discount_code import DiscountCode
 from app.models.Event_Context.event import Event
 from app.models.event_invoice import EventInvoice
 from app.models.ticket import Ticket
-from app.models.user import User
+from app.models.user_context.user import User
 
 
 class DiscountCodeListPost(ResourceList):

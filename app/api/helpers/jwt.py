@@ -4,7 +4,7 @@ from flask_jwt_extended.exceptions import JWTExtendedException, UserLoadError
 from flask_jwt_extended.view_decorators import _decode_jwt_from_request, _load_user
 from jwt.exceptions import PyJWTError
 
-from app.models.user import User
+from app.models.user_context.user import User
 
 
 def jwt_authenticate(email, password):

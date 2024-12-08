@@ -3,7 +3,7 @@ from flask_rest_jsonapi import ResourceDetail, ResourceList
 from app.api.bootstrap import api
 from app.api.schema.user_permission import UserPermissionSchema
 from app.models import db
-from app.models.user_permission import UserPermission
+from app.models.user_context.user_permission import UserPermission
 
 
 class UserPermissionList(ResourceList):

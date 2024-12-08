@@ -13,8 +13,8 @@ from app.api.helpers.utilities import strip_tags
 from app.models.Event_Context.event import Event
 from app.models.group import Group
 from app.models.role import Role
-from app.models.user_follow_group import UserFollowGroup
-from app.models.users_groups_role import UsersGroupsRoles
+from app.models.user_context.user_follow_group import UserFollowGroup
+from app.models.user_context.users_groups_role import UsersGroupsRoles
 
 groups_routes = Blueprint('groups_routes', __name__, url_prefix='/v1/groups')
 

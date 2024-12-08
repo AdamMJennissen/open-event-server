@@ -21,7 +21,7 @@ from app.models.mail import Mail
 from app.models.message_setting import MessageSettings
 from app.models.order import OrderTicket
 from app.models.ticket_holder import TicketHolder
-from app.models.user import User
+from app.models.user_context.user import User
 from app.settings import get_settings
 
 logger = logging.getLogger(__name__)

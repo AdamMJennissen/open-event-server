@@ -13,7 +13,7 @@ from app.models.event_invoice import EventInvoice
 from app.models.order import Order
 from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
-from app.models.user import User
+from app.models.user_context.user import User
 
 logger = logging.getLogger(__name__)
 

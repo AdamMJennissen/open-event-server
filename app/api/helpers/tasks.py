@@ -51,8 +51,8 @@ from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
 from app.models.Event_Context.sponsor import Sponsor
 from app.models.ticket_holder import TicketHolder
-from app.models.user import User
-from app.models.user_follow_group import UserFollowGroup
+from app.models.user_context.user import User
+from app.models.user_context.user_follow_group import UserFollowGroup
 from app.settings import get_settings
 
 from ...models.badge_field_form import BadgeFieldForms

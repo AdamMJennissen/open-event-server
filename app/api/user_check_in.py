@@ -22,7 +22,7 @@ from app.models.session_type import SessionType
 from app.models.station import Station
 from app.models.ticket_holder import TicketHolder
 from app.models.track import Track
-from app.models.user_check_in import UserCheckIn
+from app.models.user_context.user_check_in import UserCheckIn
 
 
 class UserCheckInList(ResourceList):

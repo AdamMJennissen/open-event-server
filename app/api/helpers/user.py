@@ -7,8 +7,8 @@ from sqlalchemy.orm.exc import NoResultFound
 from app.api.helpers.db import save_to_db
 from app.api.helpers.errors import ForbiddenError, UnprocessableEntityError
 from app.models import db
-from app.models.user import User
-from app.models.user_check_in import VirtualCheckIn
+from app.models.user_context.user_context.user import User
+from app.models.user_context.user_context.user_check_in import VirtualCheckIn
 
 
 def modify_email_for_user_to_be_deleted(user):

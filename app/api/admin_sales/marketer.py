@@ -6,7 +6,7 @@ from app.api.admin_sales.utils import summary
 from app.api.bootstrap import api
 from app.models import db
 from app.models.order import Order, OrderTicket
-from app.models.user import User
+from app.models.user_context.user import User
 
 
 class AdminSalesByMarketerSchema(Schema):

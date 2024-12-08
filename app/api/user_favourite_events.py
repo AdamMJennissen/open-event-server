@@ -9,8 +9,8 @@ from app.api.helpers.permission_manager import has_access, is_logged_in
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.user_favourite_events import UserFavouriteEventSchema
 from app.models import db
-from app.models.user import User
-from app.models.user_favourite_event import UserFavouriteEvent
+from app.models.user_context.user import User
+from app.models.user_context.user_favourite_event import UserFavouriteEvent
 
 
 class UserFavouriteEventListPost(ResourceList):

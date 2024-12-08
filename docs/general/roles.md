@@ -243,7 +243,7 @@ user.can_delete(service, event_id)
 
 e.g.
 ```
->>> from app.models.user import User
+>>> from app.models.user_context.user_context.user import User
 >>> from app.models.track import Track
 >>> u = User.query.all()[0]
 >>> u.can_create(Track, event_id=1)
@@ -260,8 +260,8 @@ You can define a user's role for an event in `UsersEventsRoles`.
 Here's an example showing how a user is assigned as a Track Organizer for an Event (with `event_id = 1`).
 
 ```
->>> from app.models.users_events_roles import UsersEventsRoles as UER
->>> from app.models.user import User
+>>> from app.models.user_context.user_context.users_events_roles import UsersEventsRoles as UER
+>>> from app.models.user_context.user_context.user import User
 >>> from app.models.event import Event
 >>> from app.models.role import Role
 >>> r = Role.query.filter_by(name='track_organizer').first()

@@ -12,7 +12,7 @@ from app.api.helpers.scheduled_jobs import (
 from app.api.helpers.utilities import monthdelta
 from app.models.role import Role
 from app.models.ticket_holder import TicketHolder
-from app.models.users_events_role import UsersEventsRoles
+from app.models.user_context.users_events_role import UsersEventsRoles
 from app.settings import get_settings
 from tests.factories import common
 from tests.factories.attendee import AttendeeOrderSubFactory, AttendeeSubFactory

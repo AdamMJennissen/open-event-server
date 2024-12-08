@@ -1,7 +1,7 @@
 import factory
 
-from app.models.user import User
-from app.models.user_favourite_session import UserFavouriteSession
+from app.models.user_context.user import User
+from app.models.user_context.user_favourite_session import UserFavouriteSession
 from tests.factories.base import BaseFactory
 from tests.factories.session import SessionFactory
 

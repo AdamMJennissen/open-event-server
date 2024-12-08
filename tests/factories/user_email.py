@@ -1,6 +1,6 @@
 import factory
 
-from app.models.user_email import UserEmail
+from app.models.user_context.user_email import UserEmail
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.user import UserFactory

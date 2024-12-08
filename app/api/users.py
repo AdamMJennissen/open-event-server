@@ -31,9 +31,9 @@ from app.models.order import Order
 from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
 from app.models.ticket_holder import TicketHolder
-from app.models.user import User
-from app.models.user_follow_group import UserFollowGroup
-from app.models.users_events_role import UsersEventsRoles
+from app.models.user_context.user import User
+from app.models.user_context.user_follow_group import UserFollowGroup
+from app.models.user_context.users_events_role import UsersEventsRoles
 from app.models.Event_Context.video_stream_moderator import VideoStreamModerator
 
 logger = logging.getLogger(__name__)

@@ -1,4 +1,4 @@
-from app.models.user_permission import UserPermission
+from app.models.user_context.user_permission import UserPermission
 from tests.factories import common
 from tests.factories.base import BaseFactory
 

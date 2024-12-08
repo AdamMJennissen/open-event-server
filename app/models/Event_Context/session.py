@@ -10,7 +10,7 @@ from app.models import db
 from app.models.base import SoftDeletionModel
 from app.models.Event_Context.feedback import Feedback
 from app.models.helpers.versioning import clean_html, clean_up_string
-from app.models.user_favourite_session import UserFavouriteSession
+from app.models.user_context.user_favourite_session import UserFavouriteSession
 
 speakers_sessions = db.Table(
     'speakers_sessions',

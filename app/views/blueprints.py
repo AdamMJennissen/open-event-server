@@ -7,7 +7,7 @@ from flask_admin.contrib.sqla import ModelView
 from wtforms import fields, form, validators
 
 from app.models import db
-from app.models.user import User
+from app.models.user_context.user import User
 
 
 class AdminModelView(ModelView):

@@ -8,7 +8,7 @@ from app.api.helpers.utilities import dasherize
 from app.models import db
 from app.models.Event_Context.event import Event
 from app.models.group import Group
-from app.models.user_follow_group import UserFollowGroup
+from app.models.user_context.user_follow_group import UserFollowGroup
 
 
 class AdminStatisticsGroupSchema(Schema):

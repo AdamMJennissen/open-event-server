@@ -6,8 +6,8 @@ from app.api.helpers.errors import ConflictError
 from app.api.helpers.utilities import require_relationship
 from app.api.schema.user_email import UserEmailSchema
 from app.models import db
-from app.models.user import User
-from app.models.user_email import UserEmail
+from app.models.user_context.user import User
+from app.models.user_context.user_email import UserEmail
 
 
 class UserEmailListAdmin(ResourceList):

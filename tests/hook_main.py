@@ -12,7 +12,7 @@ from flask_migrate import Migrate
 from flask import Flask
 from app.models import db
 from app.models.role import Role
-from app.models.user_token_blacklist import (  # noqa
+from app.models.user_context.user_token_blacklist import (  # noqa
     UserTokenBlackListTime,
 )  # Workaround for registering unimported model
 from app.api import routes  # noqa Workaround for importing all required models
