@@ -3,7 +3,10 @@ from sqlalchemy.sql import func
 from app.models import db
 
 
-class Mail(db.Model):
+class Mail(db.Model):\
+    """
+    Represents an email record in the database.
+    """
     __tablename__ = 'mails'
     id = db.Column(db.Integer, primary_key=True)
     recipient = db.Column(db.String)
