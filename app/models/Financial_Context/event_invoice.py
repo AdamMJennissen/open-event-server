@@ -12,9 +12,9 @@ from app.api.helpers.storage import UPLOAD_PATHS
 from app.api.helpers.utilities import monthdelta, round_money
 from app.models import db
 from app.models.base import SoftDeletionModel
-from app.models.order import Order
+from app.models.Financial_Context.order import Order
 from app.models.setting import Setting
-from app.models.ticket_fee import TicketFees
+from app.models.Financial_Context.ticket_fee import TicketFees
 from app.settings import get_settings
 
 logger = logging.getLogger(__name__)

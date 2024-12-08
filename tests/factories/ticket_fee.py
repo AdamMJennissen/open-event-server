@@ -1,4 +1,4 @@
-from app.models.ticket_fee import TicketFees
+from app.models.Financial_Context.ticket_fee import TicketFees
 from tests.factories import common
 from tests.factories.base import BaseFactory
 

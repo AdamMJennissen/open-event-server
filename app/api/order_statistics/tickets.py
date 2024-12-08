@@ -7,8 +7,8 @@ from app.api.bootstrap import api
 from app.api.helpers.db import get_count
 from app.api.helpers.utilities import dasherize
 from app.models import db
-from app.models.order import Order, OrderTicket
-from app.models.ticket import Ticket
+from app.models.Financial_Context.order import Order, OrderTicket
+from app.models.Financial_Context.ticket import Ticket
 
 
 def calculated_sale_by_status(ticket_id, status):

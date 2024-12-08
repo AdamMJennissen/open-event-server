@@ -13,9 +13,9 @@ from app.api.helpers.permissions import jwt_required
 from app.api.helpers.query import event_query
 from app.api.schema.attendees import AttendeeSchema
 from app.models import db
-from app.models.order import Order
-from app.models.ticket import Ticket
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.order import Order
+from app.models.Financial_Context.ticket import Ticket
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.user_context.user import User
 from app.settings import get_settings
 

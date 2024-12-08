@@ -1,6 +1,6 @@
 import factory
 
-from app.models.user_context.translation_channels import TranslationChannel
+from app.models.translation_channels import TranslationChannel
 from tests.factories import common
 from tests.factories.base import BaseFactory
 from tests.factories.video_stream import VideoStreamFactoryBase

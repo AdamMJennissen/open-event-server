@@ -12,7 +12,7 @@ from app.api.helpers.query import event_query
 from app.api.orders import order_misc_routes
 from app.api.schema.event_invoices import EventInvoiceSchema
 from app.models import db
-from app.models.event_invoice import EventInvoice
+from app.models.Financial_Context.event_invoice import EventInvoice
 from app.models.user_context.user import User
 from app.settings import get_settings
 

@@ -7,7 +7,7 @@ from app.api.bootstrap import api
 from app.api.helpers.utilities import dasherize
 from app.models import db
 from app.models.Event_Context.event import Event
-from app.models.order import Order, OrderTicket
+from app.models.Financial_Context.order import Order, OrderTicket
 
 
 def sales_per_location_by_status(status):

@@ -5,7 +5,7 @@ from marshmallow_jsonapi.flask import Schema
 from app.api.admin_sales.utils import summary
 from app.api.bootstrap import api
 from app.models import db
-from app.models.order import Order, OrderTicket
+from app.models.Financial_Context.order import Order, OrderTicket
 from app.models.user_context.user import User
 
 

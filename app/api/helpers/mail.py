@@ -19,8 +19,8 @@ from app.api.helpers.utilities import get_serializer, str_generator, string_empt
 from app.models.Event_Context.event import Event
 from app.models.mail import Mail
 from app.models.message_setting import MessageSettings
-from app.models.order import OrderTicket
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.order import OrderTicket
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.user_context.user import User
 from app.settings import get_settings
 

@@ -22,11 +22,11 @@ from app.api.helpers.notification import (
 )
 from app.api.helpers.storage import UPLOAD_PATHS
 from app.models import db
-from app.models.order import OrderTicket
+from app.models.Financial_Context.order import OrderTicket
 from app.models.setting import Setting
-from app.models.ticket import Ticket
-from app.models.ticket_fee import TicketFees
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.ticket import Ticket
+from app.models.Financial_Context.ticket_fee import TicketFees
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.settings import get_settings
 
 

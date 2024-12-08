@@ -12,14 +12,14 @@ from app.api.schema.exhibitors import ExhibitorReorderSchema
 from app.api.schema.speakers import SpeakerReorderSchema
 from app.api.schema.virtual_check_in import VirtualCheckInSchema
 from app.models import db
-from app.models.discount_code import DiscountCode
+from app.models.Financial_Context.discount_code import DiscountCode
 from app.models.Event_Context.event import Event
 from app.models.exhibitor import Exhibitor
 from app.models.Event_Context.microlocation import Microlocation
-from app.models.order import Order
+from app.models.Financial_Context.order import Order
 from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.ticket_holder import TicketHolder
 
 events_routes = Blueprint('events_routes', __name__, url_prefix='/v1/events')
 

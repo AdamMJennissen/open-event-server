@@ -3,7 +3,7 @@ from flask_jwt_extended import jwt_required
 
 from app.api.helpers.errors import NotFoundError
 from app.models.badge_field_form import BadgeFieldForms
-from app.models.ticket import Ticket
+from app.models.Financial_Context.ticket import Ticket
 
 ticket_routes = Blueprint('ticket_routes', __name__, url_prefix='/v1/tickets')
 

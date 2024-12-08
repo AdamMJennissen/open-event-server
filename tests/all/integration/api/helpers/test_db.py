@@ -11,7 +11,7 @@ from app.api.helpers.db import (
     save_to_db,
 )
 from app.models.Event_Context.event import Event
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from tests.factories.attendee import AttendeeSubFactory
 from tests.factories.event import EventFactoryBasic
 

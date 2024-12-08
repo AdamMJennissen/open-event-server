@@ -35,20 +35,20 @@ from app.api.schema.events import EventSchema, EventSchemaPublic
 
 # models
 from app.models import db
-from app.models.access_code import AccessCode
+from app.models.Financial_Context.access_code import AccessCode
 from app.models.custom_form import CustomForms
-from app.models.discount_code import DiscountCode
+from app.models.Financial_Context.discount_code import DiscountCode
 from app.models.email_notification import EmailNotification
 from app.models.Event_Context.event import Event
 from app.models.Event_Context.event_copyright import EventCopyright
-from app.models.event_invoice import EventInvoice
+from app.models.Financial_Context.event_invoice import EventInvoice
 from app.models.exhibitor import Exhibitor
 from app.models.faq import Faq
 from app.models.faq_type import FaqType
 from app.models.Event_Context.feedback import Feedback
 from app.models.group import Group
 from app.models.Event_Context.microlocation import Microlocation
-from app.models.order import Order
+from app.models.Financial_Context.order import Order
 from app.models.role import Role
 from app.models.role_invite import RoleInvite
 from app.models.Event_Context.session import Session
@@ -60,8 +60,8 @@ from app.models.Event_Context.speakers_call import SpeakersCall
 from app.models.Event_Context.sponsor import Sponsor
 from app.models.stripe_authorization import StripeAuthorization
 from app.models.Event_Context.tax import Tax
-from app.models.ticket import Ticket, TicketTag
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.ticket import Ticket, TicketTag
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.track import Track
 from app.models.user_context.user import (
     MARKETER,

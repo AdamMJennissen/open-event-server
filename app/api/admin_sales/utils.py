@@ -4,8 +4,8 @@ admin section
 """
 from sqlalchemy import func
 
-from app.models.order import Order
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.order import Order
+from app.models.Financial_Context.ticket_holder import TicketHolder
 
 
 def status_summary(sales_summary, tickets_summary, status):

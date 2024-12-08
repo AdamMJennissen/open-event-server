@@ -5,14 +5,14 @@ from app.api.helpers.db import safe_query, save_to_db
 from app.api.helpers.permission_manager import has_access
 from app.models import db
 from app.models.custom_form import CustomForms
-from app.models.discount_code import DiscountCode
+from app.models.Financial_Context.discount_code import DiscountCode
 from app.models.Event_Context.event import Event, get_new_event_identifier
 from app.models.Event_Context.microlocation import Microlocation
 from app.models.social_link import SocialLink
 from app.models.Event_Context.speakers_call import SpeakersCall
 from app.models.Event_Context.sponsor import Sponsor
 from app.models.Event_Context.tax import Tax
-from app.models.ticket import Ticket
+from app.models.Financial_Context.ticket import Ticket
 from app.models.track import Track
 from app.models.user_context.users_events_role import UsersEventsRoles
 

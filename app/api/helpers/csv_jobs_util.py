@@ -3,10 +3,10 @@ import pytz
 from app.api.admin_sales.utils import event_type, summary
 from app.api.helpers.group_user_role import get_user_group_role
 from app.models import db
-from app.models.access_code import AccessCode
+from app.models.Financial_Context.access_code import AccessCode
 from app.models.helpers.versioning import strip_tags
-from app.models.order import OrderTicket
-from app.models.ticket import access_codes_tickets
+from app.models.Financial_Context.order import OrderTicket
+from app.models.Financial_Context.ticket import access_codes_tickets
 from app.models.user_context.user_check_in import VirtualCheckIn
 
 

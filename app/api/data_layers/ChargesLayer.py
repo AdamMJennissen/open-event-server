@@ -3,7 +3,7 @@ from flask_rest_jsonapi.exceptions import ObjectNotFound
 
 from app.api.helpers.errors import ConflictError, UnprocessableEntityError
 from app.api.helpers.ticketing import TicketingManager
-from app.models.order import Order
+from app.models.Financial_Context.order import Order
 
 
 class ChargesLayer(BaseDataLayer):

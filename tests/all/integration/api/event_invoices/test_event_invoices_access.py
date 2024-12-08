@@ -1,6 +1,6 @@
 import json
 
-from app.models.event_invoice import EventInvoice
+from app.models.Financial_Context.event_invoice import EventInvoice
 from tests.factories.event_invoice import EventInvoiceSubFactory
 from tests.factories.user import UserFactory
 

@@ -6,10 +6,10 @@ from sqlalchemy.orm import backref
 
 from app.api.helpers.permission_manager import has_access
 from app.models import db
-from app.models.order import Order
+from app.models.Financial_Context.order import Order
 from app.models.Event_Context.session import Session
 from app.models.speaker import Speaker
-from app.models.ticket_holder import TicketHolder
+from app.models.Financial_Context.ticket_holder import TicketHolder
 from app.models.Event_Context.video_channel import VideoChannel
 
 
