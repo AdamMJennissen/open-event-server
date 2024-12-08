@@ -11,6 +11,11 @@ from app.models.Financial_Context.order import Order, OrderTicket
 
 
 def sales_per_location_by_status(status):
+    """
+    Generates a Common Table Expression (CTE) that calculates sales and ticket quantities 
+    grouped by event location for a specific order status.
+    """
+    
     return (
         db.session.query(
             Event.location_name.label('location'),
